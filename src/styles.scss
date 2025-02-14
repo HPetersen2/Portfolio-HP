@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    background-color: #141D2F;
+}
+
+body {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('./assets/fonts/Poppins-Medium.ttf');
+}
+
+@mixin defaultFont($font-weight: 400, $fontsize:23px, $color: #FFFFFF) {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: $font-weight;
+    font-size: $fontsize;
+    color: $color;
+}
+
+@mixin button($border-radius: 10px, $background-color: #70E61C, $color: #FFFFFF, $font-size: 23px) {
+    border: none;
+    border-radius: $border-radius;
+    padding: 15px 30px 15px 30px;
+    background-color: $background-color;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: $font-size;
+    &:hover {
+        background-color: #9747FF;
+        transform: scale(1.25);
+    }
+}

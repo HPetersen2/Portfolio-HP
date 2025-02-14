@@ -1,0 +1,60 @@
+@import './../../styles.scss';
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    >.picture-container {
+        >img {
+            background-image: url('./../../assets/img/29.\ photo\ shadows.svg');
+            background-size: cover;
+            width: 700px;
+        }
+    }
+    >.introduction-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        >.text-container {
+            display: flex;
+            align-items: center;
+            >.rotate-introduction {
+                >.rotate-text {
+                    @include defaultFont($color: #FFFFFF, $font-weight: 400, $fontsize: 64px);
+                }
+            }
+            >.introduction {
+                margin-bottom: 32px;
+                >.name {
+                    @include defaultFont($color:#FFFFFF, $font-weight: 700, $fontsize: 90px);
+                }
+                >.position {
+                    @include defaultFont($color: #9747FF, $font-weight: 400, $fontsize: 58px);
+                }
+            }
+        }
+        >.button-container {
+            >button {
+                @include button();
+            }
+        }
+    }
+}
+
+.contact-container {
+    >.link-container {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        >.icon {
+            width: 30px;
+        }
+        >.mail {
+            @include defaultFont($font-weight: 400, $fontsize: 23px)
+        }
+    }
+}
+
+.rotate-introduction {
+    rotate: -90deg;
+}

@@ -1,0 +1,27 @@
+@import './../../../styles.scss';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    padding: 37px 100px 37px 100px;
+    >div {
+        >svg {
+            width: 150px;
+        }
+    }
+    >nav {
+        display: flex;
+        align-items: center;
+        gap: 29px;
+        >a {
+            @include defaultFont();
+            &:hover {
+                color: #70E61C;
+            }
+        }
+    }
+}
