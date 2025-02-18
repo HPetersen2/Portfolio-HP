@@ -34,6 +34,14 @@
                 @include defaultFont($font-weight: 700, $fontsize: 16px, $color: #FFFFFF);
             }
         }
+        >.continually-learning {
+            >svg path {
+                fill: #9747FF;
+            }
+            >p {
+                color: #9747FF;
+            }
+        }
     }
     .my-skills-text {
         display: flex;

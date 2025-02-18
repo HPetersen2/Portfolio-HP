@@ -1,0 +1,76 @@
+@import './../../styles.scss';
+
+.content {
+    display: flex;
+    flex-direction: column;
+    >.head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        >h3 {
+            @include defaultFont($font-weight: 700, $fontsize: 90px, $color: #FFFFFF);
+        }
+        >p {
+            @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+        }
+    }
+    >.projects-container {
+        display: flex;
+        flex-direction: column;
+        >.project:nth-child(odd) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 35px;
+        }
+        >.project:nth-child(even) {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 35px;
+        }
+        >.project {
+            >img {
+                width: 620px;
+            }
+            >.project-info {
+                display: flex;
+                flex-direction: column;
+                gap: 35px;
+                >h4 {
+                    @include defaultFont($font-weight: 700, $fontsize: 32px, $color: #9747FF);
+                }
+                >.project-technologies {
+                    @include defaultFont($font-weight: 400, $fontsize: 23px, $color: #70E61C);
+                }
+                >.project-description {
+                    @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+                }
+                >.buttons {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 86px;
+                    >a {
+                        >.btn-test {
+                            @include button($border-radius: 10px, $background-color: #9747FF, $color: #FFFFFF, $font-size: 23px);
+                            &:hover {
+                                background-color: #70E61C;
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                    >a {
+                        >.btn-github {
+                            @include button($border-radius: 10px, $background-color: none, $color: #FFFFFF, $font-size: 23px);
+                            border: 1px solid #70E61C;
+                            &:hover {
+                                background-color: #70E61C;
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

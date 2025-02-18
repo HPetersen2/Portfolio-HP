@@ -1,0 +1,18 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    >.testimonial {
+        display: flex;
+        flex-direction: row;
+        >.text-container {
+            >img {
+                width: 100px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            border: 4px solid #70E61C;
+            border-radius: 32px;
+        }
+    }
+}
