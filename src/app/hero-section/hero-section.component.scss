@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: calc(100vh - 80px);
     >.picture-container {
         >img {
             background-image: url('./../../assets/img/29.\ photo\ shadows.svg');
@@ -37,7 +38,21 @@
             >button {
                 @include button();
             }
+            &:hover {
+                animation: scrollAnimation 300ms ease-out;
+            }
         }
+    }
+}
+
+@keyframes scrollAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 

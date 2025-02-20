@@ -1,10 +1,17 @@
 @import './../../styles.scss';
 
 .content {
+    background-image: url('./../../assets/img/28.\ Hero\ Background.svg');
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     justify-content:  center;
+    margin-left: 100px;
     >.about-me-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
         >h2 {
             @include defaultFont($font-weight: 700, $fontsize:90px, $color: #FFFFFF)
         }
@@ -36,10 +43,6 @@
                 border-radius: 50%;
                 object-fit: contain;
                 border: 4px solid #70E61C;
-            }
-            >.picture-left-line {
-                border: 2px solid #70E61C;
-                width: 100px;
             }
         }
     }

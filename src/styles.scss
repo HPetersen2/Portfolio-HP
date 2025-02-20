@@ -1,5 +1,7 @@
 * {
     background-color: #141D2F;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 body {
@@ -45,6 +47,6 @@ span {
     font-size: $font-size;
     &:hover {
         background-color: #9747FF;
-        transform: scale(1.25);
+        transform: scale(1.15 );
     }
 }
