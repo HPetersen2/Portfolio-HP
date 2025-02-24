@@ -1,0 +1,36 @@
+@import './../../../styles.scss';
+
+footer {
+    border-top: 4px solid #70E61C;
+    background-color: #141D2F;
+    >.content {
+        height: 300px;
+        margin: 0 100px 0 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >.henrik {
+            display: flex;
+            flex-direction: column;
+            >a {
+                @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+            }
+        }
+        >.copyright {
+            @include defaultFont($font-weight: 400, $fontsize: 23px, $color: #FFFFFF);
+        }
+        >.icons {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            >.icon {
+                width: 30px;
+                height: 30px;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+}
