@@ -43,8 +43,10 @@
             }
         }
         >.button-container {
-            >button {
-                @include button();
+            >a {
+                >button {
+                    @include button();
+                }
             }
             &:hover {
                 animation: scrollAnimation 300ms ease-out;

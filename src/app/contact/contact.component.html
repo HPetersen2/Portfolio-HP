@@ -1,34 +1,34 @@
 <div class="main">
-    <h3>Contact</h3>
+    <h3>{{getText("headline")}}</h3>
     <div class="content">
         <div class="text-container">
-            <h4>Get a problem to solve?</h4>
-            <p>asdf</p>
-            <p>asdf</p>
+            <h4>{{getText("intro")}}</h4>
+            <p>{{getText("request-contact")}}</p>
+            <p>{{getText("new-contact")}}</p>
             <div class="shadow"></div>
         </div>
         <div class="contact-field-container">
             <form (ngSubmit)="onSubmit()">
                 <label for="name"></label>
-                <input [(ngModel)]="contactData.name" id="name" placeholder="Your name" type="text">
+                <input [(ngModel)]="contactData.name" id="name" placeholder='{{getText("name-field")}}' type="text">
     
                 <label for="email"></label>
-                <input [(ngModel)]="contactData.email" id="email" placeholder="Your email" type="email">
+                <input [(ngModel)]="contactData.email" id="email" placeholder='{{getText("email-field")}}' type="email">
     
                 <label for="message"></label>
-                <textarea [(ngModel)]="contactData.name" id="message" placeholder="Your message" type="text"></textarea>
+                <textarea [(ngModel)]="contactData.message" id="message" placeholder='{{getText("message-field")}}' type="text"></textarea>
     
                 <div class="send-container">
                     <div class="accept">
                         @if (this.accept) {
-                            <a (click)="changeStatusPolicy()"><img src="assets/img/check_box.svg" checked alt="checkbox"></a>
+                            <a (click)="changeStatusPolicy()"><img src="assets/img/check_box.svg" alt="checkbox"></a>
                         } @else {
                             <a (click)="changeStatusPolicy()"><img src="assets/img/check_box_outline_blank.svg" alt="checkbox"></a>
                         }
-                        <p>I've read the <a href="#">privacy policy</a> agree to the processing of my data as outlined.</p>
+                        <p>{{getText("acceptdata")}} <a href="#">{{getText("privacy")}}</a> {{getText("acceptdata2")}}</p>
                     </div>
                     <div class="button">
-                        <button>Send message :&#41;</button>
+                        <button>{{getText("send")}}</button>
                     </div>
                 </div>
 
