@@ -1,0 +1,97 @@
+@import './../../styles.scss';
+
+.main {
+    background-color: #141D2F;
+}
+
+h3 {
+    text-align: center;
+    @include defaultFont($font-weight: 700, $fontsize: 90px, $color: #FFFFFF);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    >.text-container {
+        display: flex;
+        flex-direction: column;
+        >h4 {
+            @include defaultFont($font-weight: 700, $fontsize: 32px, $color: #FFFFFF);
+        }
+        >p {
+            @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+        }
+    }
+    >.contact-field-container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+        >form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 10px;
+            >input, textarea {
+                background-color: #141D2F;
+                border: 1px solid #9747FF;
+                border-radius: 10px;
+                padding: 15px 25px 15px 25px;
+                @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+                &::placeholder {
+                    @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+                }
+                &:hover {
+                    border: 1px solid #70E61C;
+                }
+            }
+            >textarea {
+                min-width: 617px;
+                min-height: 202px;
+                max-width: 617px;
+                max-height: 202px;
+            }
+            >.send-container {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                >.accept {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 8px;
+                    >a >img{
+                        width: 18px;
+                        height: 18px;
+                    }
+                    >p {
+                        @include defaultFont($font-weight: 400, $fontsize: 14px, $color: #FFFFFF);
+                        >a {
+                            @include defaultFont($font-weight: 400, $fontsize: 14px, $color: #9747FF);
+                        }
+                    }
+                }
+                >.button {
+                    display: flex;
+                    justify-content: center;
+                    >button {
+                        @include button($border-radius: 10px, $background-color: #B6B6B6, $color: #FFFFFF, $font-size: 23px);
+                        &:hover {
+                            background-color: #B6B6B6;
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.shadow {
+    height: 300px;
+    width: 500px;
+    background-image: url('./../../assets/img/33.\ Purple\ shadow\ Footer.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,5 +1,9 @@
 @import './../../../styles.scss';
 
+* {
+    background-color: #141D2F;
+}
+
 header {
     height: 80px;
     position: sticky;

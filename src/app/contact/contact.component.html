@@ -1,1 +1,39 @@
-<p>contact works!</p>
+<div class="main">
+    <h3>Contact</h3>
+    <div class="content">
+        <div class="text-container">
+            <h4>Get a problem to solve?</h4>
+            <p>asdf</p>
+            <p>asdf</p>
+            <div class="shadow"></div>
+        </div>
+        <div class="contact-field-container">
+            <form (ngSubmit)="onSubmit()">
+                <label for="name"></label>
+                <input [(ngModel)]="contactData.name" id="name" placeholder="Your name" type="text">
+    
+                <label for="email"></label>
+                <input [(ngModel)]="contactData.email" id="email" placeholder="Your email" type="email">
+    
+                <label for="message"></label>
+                <textarea [(ngModel)]="contactData.name" id="message" placeholder="Your message" type="text"></textarea>
+    
+                <div class="send-container">
+                    <div class="accept">
+                        @if (this.accept) {
+                            <a (click)="changeStatusPolicy()"><img src="assets/img/check_box.svg" checked alt="checkbox"></a>
+                        } @else {
+                            <a (click)="changeStatusPolicy()"><img src="assets/img/check_box_outline_blank.svg" alt="checkbox"></a>
+                        }
+                        <p>I've read the <a href="#">privacy policy</a> agree to the processing of my data as outlined.</p>
+                    </div>
+                    <div class="button">
+                        <button>Send message :&#41;</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    
+</div>

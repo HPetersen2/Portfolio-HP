@@ -1,17 +1,17 @@
 @import './../../styles.scss';
 
 .content {
-    background-image: url('./../../assets/img/28.\ Hero\ Background.svg');
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     justify-content:  center;
-    margin-left: 100px;
+    
+    background-color: #141D2F;
     >.about-me-container {
         display: flex;
         flex-direction: column;
+        width: 471px;
         gap: 24px;
+        margin-left: 100px;
         >h2 {
             @include defaultFont($font-weight: 700, $fontsize:90px, $color: #FFFFFF)
         }
@@ -47,4 +47,14 @@
         }
     }
 
+}
+
+.shadow {
+    transform: rotate(-46.66deg);
+    margin-top: -100px;
+    margin-right: -250px;
+    width: 570px;
+    height: 600px;
+    background-image: url('./../../assets/img/30.\ Purple\ shadow\ about\ me.svg');
+    background-size: cover;
 }
