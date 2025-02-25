@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { LanguageService } from '../../language.service';
+import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
+
 
 @Component({
   selector: 'app-header',
@@ -10,7 +11,7 @@ import { LanguageService } from '../../language.service';
 })
 export class HeaderComponent {
 
-  constructor(public languageService: LanguageService) {}
+
 
   texts: { [key: string]: { [key: string]: string } } = {
     german: {
