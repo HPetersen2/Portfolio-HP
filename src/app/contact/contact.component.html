@@ -9,14 +9,14 @@
         </div>
         <div class="contact-field-container">
             <form (ngSubmit)="onSubmit()">
-                <!-- <label for="name"></label>
-                <input [(ngModel)]="contactData.name" id="name" placeholder='{{getText("name-field")}}' type="text">
+                <label for="name"></label>
+                <input [(ngModel)]="contactData.name" id="name" [placeholder]="'contact.name-field' | translate" type="text">
     
                 <label for="email"></label>
-                <input [(ngModel)]="contactData.email" id="email" placeholder='{{getText("email-field")}}' type="email">
+                <input [(ngModel)]="contactData.email" id="email" [placeholder]="'contact.email-field' | translate" type="email">
     
                 <label for="message"></label>
-                <textarea [(ngModel)]="contactData.message" id="message" placeholder='{{getText("message-field")}}' type="text"></textarea>
+                <textarea [(ngModel)]="contactData.message" id="message" [placeholder]="'contact.message-field' | translate" type="text"></textarea>
     
                 <div class="send-container">
                     <div class="accept">
@@ -25,12 +25,12 @@
                         } @else {
                             <a (click)="changeStatusPolicy()"><img src="assets/img/check_box_outline_blank.svg" alt="checkbox"></a>
                         }
-                        <p>{{getText("acceptdata")}} <a href="#">{{getText("privacy")}}</a> {{getText("acceptdata2")}}</p>
+                        <p>{{ 'contact.acceptdata' | translate }} <a href="#">{{ 'contact.policy' | translate }}</a>{{ 'contact.acceptdata2' | translate }}</p>
                     </div>
                     <div class="button">
-                        <button>{{getText("send")}}</button>
+                        <button>{{ 'contact.send' | translate }}</button>
                     </div>
-                </div> -->
+                </div>
 
             </form>
         </div>
