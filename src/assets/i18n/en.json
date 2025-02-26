@@ -15,5 +15,18 @@
         "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
         "pollo-loco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
         "btn-test": "Live test"
+    },
+    "contact": {
+        "headline": "Contact",
+        "intro": "New idea or problem to solve?",
+        "request-contact": "Feel free to contact me without obligation.",
+        "new-contact": "I look forward to hearing from you!",
+        "name-field": "Your name",
+        "email-field": "Your email",
+        "message-field": "Your message",
+        "acceptdata": "I've read the",
+        "privacy": "privacy policy",
+        "acceptdata2": "agree to the processing of my data as outlined.",
+        "send": "Send message :)"
     }
 }
