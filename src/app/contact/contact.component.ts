@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
-import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-contact',
@@ -11,8 +10,6 @@ import { LanguageService } from '../language.service';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-
-  constructor(private languageService: LanguageService) {}
 
   accept:boolean = false;
   contactData = {

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { LanguageService } from '../language.service';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -10,8 +9,5 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './my-skills.component.scss'
 })
 export class MySkillsComponent {
-
-  constructor(private languageService: LanguageService) {}
-
 
 }

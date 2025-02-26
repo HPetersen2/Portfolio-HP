@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -10,8 +9,5 @@ import { LanguageService } from '../language.service';
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
-
-  constructor(private languageService: LanguageService) {}
-
 
 }

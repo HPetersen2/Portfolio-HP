@@ -1,32 +1,19 @@
 import { Component } from '@angular/core';
-import { LanguageService } from '../../language.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
 
-  constructor(public languageService: LanguageService) {}
+  currentYear:number;
 
-  texts: { [key: string]: { [key: string]: string } } = {
-    german: {
-      "legalnotice": "Rechtliche Hinweise",
-    },
-    english: {
-      "legalnotice": "Legal Notice",
-    }
-  }
-
-  getText(key:string) {
-    return this.texts[this.languageService.currentLanguage][key];
-  }
-
-  getCurrentYear() {
-    return new Date().getFullYear();
+  constructor() {
+    this.currentYear = new Date().getFullYear();
   }
 
 }

@@ -2,10 +2,17 @@
     "header": {
         "aboutMe": "Über mich"
     },
+    "about-me": {
+        "headline": "Über mich",
+        "intro": "Die IT hat mich schon als Kind fasziniert. Sowohl in meiner Ausbildung als auch während meines Studiums habe ich schon früh begonnen, Prozesse zu automatisieren und mein großes Interesse an der IT weiter zu vertiefen.",
+        "location": "Ich wohne im Solling im Landkreis Northeim und fühle mich dort sehr wohl.",
+        "learn": "Ich bin immer offen für neue Technologien, und neue Dinge zu lernen ist fast schon ein Hobby von mir.",
+        "skills": "Meine analytischen Fähigkeiten haben mich immer vorangebracht. Für mich sind Fehler eine Chance, aus ihnen zu lernen und mich ständig zu verbessern."
+    },
     "my-skills": {
         "headline": "Meine Skills",
         "technologies": "Mit diesen Frontendtechnologien, kenne ich mich bereits sehr gut aus.",
-        "looking-another-skill": "Auf der Suche nach <span class='another-skill'>einem anderen Skill</span>?",
+        "looking-another-skill": "Auf der Suche nach <span style='color: yellow;'>einem anderen Skill</span>?",
         "new-technology": "Sehr gerne arbeite ich mich in eine weitere Technologie ein, um weiter zu verbessern.",
         "continually-learning": "Kontiunierliches Lernen",
         "contact": "Kontakt aufnehmen"
@@ -24,10 +31,11 @@
         "name-field": "Dein Name",
         "email-field": "Deine E-Mail",
         "message-field": "Deine Nachricht",
-        "acceptdata": "Ich habe die",
-        "privacy": "Datenschutzbestimmungen",
-        "acceptdata2": "gelesen und stimme der Verarbeitung meiner Daten zu.",
+        "privacy-policy": "Ich habe die <a href='#'>Datenschutzbestimmungen</a> gelesen und stimme der Verarbeitung meiner Daten zu.",
         "send": "Senden :)"
+    },
+    "footer": {
+        "legalnotice": "Rechtliche Hinweise"
     }
 
 }

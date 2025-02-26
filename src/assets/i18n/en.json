@@ -2,10 +2,17 @@
     "header": {
         "aboutMe" : "About me"
     },
+    "about-me": {
+        "headline": "About me",
+        "intro": "IT has fascinated me since I was a child. Both in my apprenticeship and during my studies, I started automating processes early on and further deepened my great interest in IT.",
+        "location": "I live in Solling in the district of Northeim and feel very much at home there.",
+        "learn": "I am always open to new technologies and learning new things is almost a hobby of mine.",
+        "skills": "My analytical skills have always helped me to progress. For me, mistakes are an opportunity to learn from them and continuously improve."
+    },
     "my-skills": {
         "headline": "My skills",
         "technologies": "I am already very familiar with these front-end technologies.",
-        "looking-another-skill": "Looking for <span class='another-skill'>another skill</span>?",
+        "looking-another-skill": "Looking for <span style='color: #9747FF; font-size: 32px; font-weight: 700;'>another skill</span>?",
         "new-technology": "I am very happy to familiarize myself with another technology in order to improve it further.",
         "continually-learning": "Continually learning",
         "contact": "Get in touch"
@@ -24,9 +31,11 @@
         "name-field": "Your name",
         "email-field": "Your email",
         "message-field": "Your message",
-        "acceptdata": "I've read the",
-        "privacy": "privacy policy",
-        "acceptdata2": "agree to the processing of my data as outlined.",
+        "privacy-policy": "I've read the <a href='#'>privacy policy</a> agree to the processing of my data as outlined.",
         "send": "Send message :)"
+    },
+    "footer": {
+        "legalnotice": "Legal Notice"
     }
+
 }

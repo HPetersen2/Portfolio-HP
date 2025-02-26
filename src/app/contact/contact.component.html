@@ -25,7 +25,7 @@
                         } @else {
                             <a (click)="changeStatusPolicy()"><img src="assets/img/check_box_outline_blank.svg" alt="checkbox"></a>
                         }
-                        <p>{{ 'contact.acceptdata' | translate }} <a href="#">{{ 'contact.policy' | translate }}</a>{{ 'contact.acceptdata2' | translate }}</p>
+                        <p [innerHTML]="'contact.privacy-policy' | translate"></p>
                     </div>
                     <div class="button">
                         <button>{{ 'contact.send' | translate }}</button>
