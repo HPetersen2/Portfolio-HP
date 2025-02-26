@@ -13,13 +13,13 @@
             </svg>                                                    
         </div>
         <nav>
-            <a href="#about-me">{{getText("aboutMe")}}</a>
-            <a href="#my-skills">{{getText("skills")}}</a>
-            <a href="#portfolio">{{getText("portfolio")}}</a>
-            @if(this.languageService.currentLanguage == "german") {
-                <img (click)="this.languageService.switchLanguage('german')" src="assets/img/english.svg" alt="english_flag">
-            } @else if (this.languageService.currentLanguage == "english") {
-                <img (click)="this.languageService.switchLanguage('english')" src="assets/img/german.svg" alt="german_flag">
+            <a href="#about-me">{{ 'header.aboutMe' | translate }}</a>
+            <a href="#my-skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            @if(this.languageService.currentLanguage == "de") {
+                <img (click)="this.languageService.switchLanguage('de')" src="assets/img/english.svg" alt="english_flag">
+            } @else if (this.languageService.currentLanguage == "en") {
+                <img (click)="this.languageService.switchLanguage('en')" src="assets/img/german.svg" alt="german_flag">
             }
         </nav>
     </div>

@@ -1,0 +1,19 @@
+{
+    "header": {
+        "aboutMe": "Über mich"
+    },
+    "my-skills": {
+        "headline": "Meine Skills",
+        "technologies": "Mit diesen Frontendtechnologien, kenne ich mich bereits sehr gut aus.",
+        "looking-another-skill": "Auf der Suche nach <span class='another-skill'>einem anderen Skill</span>?",
+        "new-technology": "Sehr gerne arbeite ich mich in eine weitere Technologie ein, um weiter zu verbessern.",
+        "continually-learning": "Kontiunierliches Lernen",
+        "contact": "Kontakt aufnehmen"
+    },
+    "portfolio": {
+        "intro": "Entdecken Sie hier meine Projekte, um sich ein Bild von meinen Fähigkeiten zu verschaffen.",
+        "join": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+        "pollo-loco": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+        "btn-test": "Testen"
+    }
+}

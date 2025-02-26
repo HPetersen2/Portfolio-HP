@@ -1,0 +1,19 @@
+{
+    "header": {
+        "aboutMe" : "About me"
+    },
+    "my-skills": {
+        "headline": "My skills",
+        "technologies": "I am already very familiar with these front-end technologies.",
+        "looking-another-skill": "Looking for <span class='another-skill'>another skill</span>?",
+        "new-technology": "I am very happy to familiarize myself with another technology in order to improve it further.",
+        "continually-learning": "Continually learning",
+        "contact": "Get in touch"
+    },
+    "portfolio": {
+        "intro": "Discover my projects here to get an idea of my skills.",
+        "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "pollo-loco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+        "btn-test": "Live test"
+    }
+}

@@ -1,15 +1,15 @@
 <div class="main">
-    <h3>{{getText("headline")}}</h3>
+    <h3>{{ 'contact.headline' | translate }}</h3>
     <div class="content">
         <div class="text-container">
-            <h4>{{getText("intro")}}</h4>
-            <p>{{getText("request-contact")}}</p>
-            <p>{{getText("new-contact")}}</p>
+            <h4>{{ 'contact.intro' | translate }}</h4>
+            <p>{{ 'contact.request-contact' | translate }}</p>
+            <p>{{ 'contact.new-contact' | translate }}</p>
             <div class="shadow"></div>
         </div>
         <div class="contact-field-container">
             <form (ngSubmit)="onSubmit()">
-                <label for="name"></label>
+                <!-- <label for="name"></label>
                 <input [(ngModel)]="contactData.name" id="name" placeholder='{{getText("name-field")}}' type="text">
     
                 <label for="email"></label>
@@ -30,7 +30,7 @@
                     <div class="button">
                         <button>{{getText("send")}}</button>
                     </div>
-                </div>
+                </div> -->
 
             </form>
         </div>
