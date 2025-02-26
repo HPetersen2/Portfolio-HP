@@ -78,17 +78,26 @@ h3 {
                 >.button {
                     display: flex;
                     justify-content: center;
-                    >button {
-                        @include button($border-radius: 10px, $background-color: #B6B6B6, $color: #FFFFFF, $font-size: 23px);
-                        &:hover {
-                            background-color: #B6B6B6;
-                            transform: scale(1);
-                        }
-                    }
                 }
             }
         }
 
+    }
+}
+
+.default-btn {
+    @include button($border-radius: 10px, $background-color: #B6B6B6, $color: #FFFFFF, $font-size: 23px);
+    &:hover {
+        background-color: #B6B6B6;
+        transform: scale(1);
+    }
+}
+
+.active-btn {
+    @include button($border-radius: 10px, $background-color: #70E61C, $color: #FFFFFF, $font-size: 23px);
+    &:hover {
+        background-color: #70E61C;
+        transform: scale(1);
     }
 }
 

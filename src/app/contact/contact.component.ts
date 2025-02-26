@@ -1,17 +1,19 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, TranslateModule],
+  imports: [FormsModule, TranslateModule, NgClass],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
 
   accept:boolean = false;
+
   contactData = {
     name: "",
     email: "",
@@ -26,8 +28,11 @@ export class ContactComponent {
     }
   }
 
-  onSubmit() {
-    console.log(this.contactData)
+  onSubmit(ngForm: NgForm) {
+    if(ngForm.valid && ngForm.submitted && this.accept) {
+      console.log(this.contactData);
+
+    }
   }
 
 }
