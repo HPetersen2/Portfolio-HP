@@ -12,6 +12,7 @@ header {
     top: 0;
     padding: 37px 100px 37px 100px;
     >.content {
+        max-width: 1440px;
         display: flex;
         justify-content: space-between;
         >div {

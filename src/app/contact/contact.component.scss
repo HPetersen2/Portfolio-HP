@@ -33,26 +33,37 @@ h3 {
         >form {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 32px;
             margin-bottom: 10px;
-            >input, textarea {
+            .field {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 background-color: #141D2F;
                 border: 1px solid #9747FF;
                 border-radius: 10px;
                 padding: 15px 25px 15px 25px;
-                @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
-                &::placeholder {
-                    @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
-                }
+                margin-bottom: 10px;
                 &:hover {
                     border: 1px solid #70E61C;
                 }
-            }
-            >textarea {
-                min-width: 617px;
-                min-height: 202px;
-                max-width: 617px;
-                max-height: 202px;
+                >input, textarea {
+                    resize: none;
+                    background-color: #141D2F;
+                    width: 100%;
+                    border: none;
+                    @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+                    &::placeholder {
+                        @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+                    }
+                    &:focus-visible, :active {
+                        outline: none;
+                    }
+                }
+                >img {
+                    width: 25px;
+                    height: 25px;
+                }
             }
             >.send-container {
                 display: flex;
@@ -99,6 +110,10 @@ h3 {
         background-color: #70E61C;
         transform: scale(1);
     }
+}
+
+.error {
+    @include defaultFont($font-weight: 400, $fontsize: 14px, $color: #E61C40);
 }
 
 .shadow {

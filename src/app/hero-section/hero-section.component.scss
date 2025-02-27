@@ -6,9 +6,11 @@
     background-image: url('./../../assets/img/28.\ Hero\ Background.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw;
 }
 
 .main {
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,14 +29,14 @@
             display: flex;
             align-items: center;
             >.rotate-introduction {
-                >.rotate-text {
-                    @include defaultFont($color: #FFFFFF, $font-weight: 400, $fontsize: 64px);
-                }
+                white-space: nowrap;
+                transform: rotate(-90deg);
+                @include defaultFont($color: #FFFFFF, $font-weight: 400, $fontsize: 64px);
             }
             >.introduction {
                 margin-bottom: 32px;
                 >.name {
-                    margin-bottom: calc(-1.5vw - .5rem);
+                    white-space: nowrap;
                     @include defaultFont($color:#FFFFFF, $font-weight: 700, $fontsize: 90px);
                 }
                 >.position {
@@ -87,16 +89,23 @@
             width: 100px;
             height: 4px;
             background-color: #9747FF;
-            transition: all ease 2s;
         }
     }
     >.scroll-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 10px;
         >div {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 60px;
             margin-left: 100px;
+            cursor: pointer;
+            &:hover {
+                animation: moveUpDown 0.8s ease-in-out infinite alternate;
+            }
             >p {
                 transform: rotate(90deg);
                 @include defaultFont($color: #FFFFFF, $font-weight: 400, $fontsize: 23px);
@@ -109,6 +118,8 @@
     }
 }
 
-.rotate-introduction {
-    rotate: -90deg;
+@keyframes moveUpDown {
+    0% { transform: translateY(0); }    // Startposition
+    50% { transform: translateY(-12px); } // Nach oben
+    100% { transform: translateY(0); }  // Wieder zurück nach unten
 }

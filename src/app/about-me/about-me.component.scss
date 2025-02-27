@@ -3,13 +3,12 @@
 .content {
     display: flex;
     flex-direction: row;
-    justify-content:  center;
-    
+    justify-content:  space-between;
     background-color: #141D2F;
     >.about-me-container {
         display: flex;
         flex-direction: column;
-        width: 471px;
+        max-width: 800px;
         gap: 24px;
         margin-left: 100px;
         >h2 {
@@ -33,10 +32,12 @@
         }
     }
     >.about-me-picture-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
         >.about-me-picture {
-            display: flex;
-            flex-direction: row;
-            padding-left: 100px;
+            margin-left: 100px;
             >img {
                 width: 453px;
                 height: 453px;
@@ -45,16 +46,28 @@
                 border: 4px solid #70E61C;
             }
         }
+        >.line {
+            height: 4px;
+            background-color: #70E61C;
+            flex-grow: 1;
+        }
     }
 
 }
 
-.shadow {
-    transform: rotate(-46.66deg);
-    margin-top: -100px;
-    margin-right: -250px;
-    width: 570px;
-    height: 600px;
-    background-image: url('./../../assets/img/30.\ Purple\ shadow\ about\ me.svg');
-    background-size: cover;
-}
+
+// .shadow-container {
+//     position: relative;
+//     width: 570px;
+//     height: 600px;
+//     >.shadow {
+//         transform: rotate(-46.66deg);
+//         position: absolute;
+//         left: 0;
+//         top: 0;
+//         width: 100%;
+//         height: 100%;
+//         background-image: url('./../../assets/img/30.\ Purple\ shadow\ about\ me.svg');
+//         background-size: cover;
+//     }
+// }
