@@ -1,13 +1,31 @@
 @import './../../styles.scss';
 
+
 .main {
     background-color: #141D2F;
+    padding-top: 140px;
 }
 
-h3 {
-    text-align: center;
-    margin-bottom: 32px;
-    @include defaultFont($font-weight: 700, $fontsize: 90px, $color: #FFFFFF);
+.head {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 32px;
+    >.line-left {
+        background-color: #9747FF;
+        height: 4px;
+        flex-grow: 1;
+    }
+    >h3 {
+        flex-shrink: 0;
+        margin-left: 32px;
+        text-align: center;
+        @include defaultFont($font-weight: 700, $fontsize: 90px, $color: #FFFFFF);
+    }
+    >.spacer {
+        flex-grow: 1;
+        visibility: hidden;
+    }
 }
 
 .content {
@@ -114,8 +132,8 @@ h3 {
 
 .error {
     @include defaultFont($font-weight: 400, $fontsize: 14px, $color: #E61C40);
+    margin: 0;
 }
-
 .shadow {
     height: 300px;
     width: 500px;

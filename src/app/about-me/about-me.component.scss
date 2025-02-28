@@ -1,10 +1,16 @@
 @import './../../styles.scss';
 
+.about-me {
+    background-color: #141D2F;
+    display: flex;
+    justify-content: center;
+}
+
 .content {
     display: flex;
     flex-direction: row;
     justify-content:  space-between;
-    background-color: #141D2F;
+    max-width: 1440px;
     >.about-me-container {
         display: flex;
         flex-direction: column;
@@ -47,9 +53,10 @@
             }
         }
         >.line {
+            width: 100%;
             height: 4px;
             background-color: #70E61C;
-            flex-grow: 1;
+            flex: 1;
         }
     }
 
