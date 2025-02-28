@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { NgClass } from '@angular/common';
 import { NgStyle } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -12,6 +13,8 @@ import { NgStyle } from '@angular/common';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+
+  http = inject(HttpClient);
 
   accept:boolean = false;
   touchedAccept:boolean = false;
@@ -31,12 +34,37 @@ export class ContactComponent {
     }
   }
 
+  mailTest = true;
+
+  post = {
+    endPoint: 'https://henrik-petersen.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
   onSubmit(ngForm: NgForm) {
-    if(ngForm.valid && ngForm.submitted && this.accept) {
-      console.log(this.contactData);
-      this.accept = false;
-      this.touchedAccept = false;
-      ngForm.reset();
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest && this.accept) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+            this.accept = false;
+            this.touchedAccept = false;
+            ngForm.resetForm();
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest && this.accept) {
+        this.accept = false;
+        this.touchedAccept = false;
+        ngForm.resetForm();
     }
   }
 
