@@ -11,16 +11,22 @@ header {
     left: 0;
     top: 0;
     padding: 37px 100px 37px 100px;
+    @media (max-width: 750px) {
+        height: 50px;
+        width: 100vw;
+        padding: 37px 50px 37px 50px;
+    }
+    @media (max-width: 500px) {
+        padding: 37px 25px 37px 25px;
+    }
     >.content {
         max-width: 1440px;
         display: flex;
         justify-content: space-between;
-        >div {
-            >svg {
-                width: 150px;
-            }
+        >div >svg {
+            width: 150px;
         }
-        >nav {
+        >.nav-bigscreen {
             display: flex;
             align-items: center;
             gap: 29px;
@@ -34,6 +40,42 @@ header {
                 width: 36px;
                 height: 36px;
             }
+            @media (max-width: 600px) {
+                display: none;
+            }
+        }
+        >.nav-mobile {
+            display: none;
+            >a >img {
+                width: 30px;
+            }
+            @media (max-width: 600px) {
+                display: flex;
+            }
         }
     }
+}
+
+.burger-menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 29px;
+    background-color: #414856;
+    height: calc(100vh - 50px);
+    overflow-y: hidden;
+    >a {
+        background-color: #414856;
+        @include defaultFont($font-weight: 400, $fontsize: 23px, $color: #FFFFFF);
+    }
+    >img {
+        background-color: #414856;
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.open {
+    display: flex;
 }

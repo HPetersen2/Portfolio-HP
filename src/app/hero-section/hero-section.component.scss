@@ -14,11 +14,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    @media (max-width: 750px) {
+        flex-direction: column;
+    }
     >.picture-container {
         >img {
             background-image: url('./../../assets/img/29.\ photo\ shadows.svg');
             background-size: cover;
             width: 700px;
+            @media (max-width: 750px) {
+                width: 100%;
+            }
         }
     }
     >.introduction-container {

@@ -4,7 +4,7 @@
     },
     "about-me": {
         "headline": "Über mich",
-        "intro": "Die IT hat mich schon als Kind fasziniert. Sowohl in meiner Ausbildung als auch während meines Studiums habe ich schon früh begonnen, Prozesse zu automatisieren und mein großes Interesse an der IT weiter zu vertiefen.",
+        "intro": "Die IT hat mich schon als Kind fasziniert. Sowohl in meiner Ausbildung als auch während meines Studiums habe ich schon früh begonnen, Prozesse zu automatisieren, um mein großes Interesse an der IT weiter zu vertiefen.",
         "location": "Ich komme aus dem wunderschönen Solling im Landkreis Northeim und fühle mich hier sehr wohl.",
         "learn": "Ich bin immer offen für neue Technologien, und neue Dinge zu lernen ist fast schon ein Hobby von mir.",
         "skills": "Meine analytischen Fähigkeiten haben mich immer vorangebracht. Für mich sind Fehler eine Chance, aus ihnen zu lernen und mich ständig zu verbessern."
@@ -13,7 +13,7 @@
         "headline": "Meine Skills",
         "technologies": "Mit diesen Frontendtechnologien, kenne ich mich bereits sehr gut aus.",
         "looking-another-skill": "Auf der Suche nach <span style='color: yellow;'>einem anderen Skill</span>?",
-        "new-technology": "Sehr gerne arbeite ich mich in eine weitere Technologie ein, um weiter zu verbessern.",
+        "new-technology": "Sehr gerne arbeite ich mich in eine weitere Technologie ein, um weiter zu lernen.",
         "continually-learning": "Kontiunierliches Lernen",
         "contact": "Kontakt aufnehmen"
     },
@@ -26,7 +26,7 @@
     "contact": {
         "headline": "Kontakt",
         "intro": "Neue Idee oder ein Problem zu lösen?",
-        "request-contact": "Nehmen Sie gerne unverbindlich zu mir Kontakt auf.",
+        "request-contact": "Nehmen Sie gerne unverbindlich Kontakt zu mir auf.",
         "new-contact": "Ich freue mich auf Ihre Nachricht!",
         "name-field": "Dein Name",
         "email-field": "Deine E-Mail",

@@ -10,18 +10,16 @@
     display: flex;
     flex-direction: row;
     justify-content:  space-between;
-    max-width: 1440px;
     >.about-me-container {
         display: flex;
         flex-direction: column;
-        max-width: 800px;
         gap: 24px;
         margin-left: 100px;
         >h2 {
-            @include defaultFont($font-weight: 700, $fontsize:90px, $color: #FFFFFF)
+            @include defaultFont($font-weight: 700, $fontsize:90px, $color: #FFFFFF);
         }
         >p {
-            @include defaultFont($font-weight: 400, $fontsize:16px, $color: #FFFFFF)
+            @include defaultFont($font-weight: 400, $fontsize:16px, $color: #FFFFFF);
         }
         >.about-me-point {
             display: flex;
@@ -33,7 +31,15 @@
                 height: 48px;
             }
             >p {
-                @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF)
+                word-break: break-word;
+                @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+            }
+        }
+        @media (max-width: 750px) {
+            width: 100vw;
+            margin-left: 24px;
+            >h2 {
+                @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
             }
         }
     }
@@ -42,6 +48,9 @@
         flex-direction: row;
         align-items: center;
         width: 100%;
+        @media (max-width: 750px) {
+            display: none;
+        }
         >.about-me-picture {
             margin-left: 100px;
             >img {

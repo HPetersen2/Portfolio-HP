@@ -12,7 +12,7 @@
                 <path d="M22.732 4.62V30H15.676V19.812H7.072V30H0.0160007V4.62H7.072V14.16H15.676V4.62H22.732Z" fill="white"/>
             </svg>                                                    
         </div>
-        <nav>
+        <nav class="nav-bigscreen">
             <a href="#about-me">{{ 'header.aboutMe' | translate }}</a>
             <a href="#my-skills">Skills</a>
             <a href="#portfolio">Portfolio</a>
@@ -22,5 +22,18 @@
                 <img (click)="this.languageService.switchLanguage('en')" src="assets/img/german.svg" alt="german_flag">
             }
         </nav>
+        <nav class="nav-mobile">
+            <img (click)="switchBurgerMenu()" src="assets/img/burger_menu.svg" alt="menu">
+        </nav>
     </div>
 </header>
+<div class="burger-menu" [ngClass]="{'open': isBurgerMenuActive}">
+    <a href="#about-me">{{ 'header.aboutMe' | translate }}</a>
+    <a href="#my-skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
+    @if(this.languageService.currentLanguage == "de") {
+        <img (click)="this.languageService.switchLanguage('de')" src="assets/img/english.svg" alt="english_flag">
+    } @else if (this.languageService.currentLanguage == "en") {
+        <img (click)="this.languageService.switchLanguage('en')" src="assets/img/german.svg" alt="german_flag">
+    }
+</div>
