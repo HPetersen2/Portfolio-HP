@@ -36,7 +36,6 @@
             }
         }
         @media (max-width: 750px) {
-            width: 100vw;
             margin-left: 24px;
             >h2 {
                 @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);

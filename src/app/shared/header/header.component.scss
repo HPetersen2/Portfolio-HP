@@ -64,7 +64,6 @@ header {
     gap: 29px;
     background-color: #414856;
     height: calc(100vh - 50px);
-    overflow-y: hidden;
     >a {
         background-color: #414856;
         @include defaultFont($font-weight: 400, $fontsize: 23px, $color: #FFFFFF);

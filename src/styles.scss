@@ -26,6 +26,10 @@ span {
     margin: 0;
 }
 
+.no-scroll {
+    overflow-y: hidden;
+}
+
 @font-face {
     font-family: Poppins;
     src: url('./assets/fonts/Poppins-Medium.ttf');

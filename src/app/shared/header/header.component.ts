@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { TranslateModule } from "@ngx-translate/core";
 import { LanguageService } from '../../language.service';
 import { NgClass } from '@angular/common';
+import { Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,7 @@ import { NgClass } from '@angular/common';
 })
 export class HeaderComponent {
 
-  constructor(public languageService: LanguageService) {}
+  constructor(public languageService: LanguageService, private renderer: Renderer2) {}
 
   isBurgerMenuActive:boolean = false;
 
@@ -20,12 +21,15 @@ export class HeaderComponent {
     switch(this.isBurgerMenuActive) {
       case false:
         this.isBurgerMenuActive = true;
+        this.renderer.addClass(document.body, 'no-scroll');
         break;
       case true:
         this.isBurgerMenuActive = false;
+        this.renderer.removeClass(document.body, 'no-scroll');
         break;
       default:
         this.isBurgerMenuActive = false;
+        this.renderer.removeClass(document.body, 'no-scroll');
     }
   }
 

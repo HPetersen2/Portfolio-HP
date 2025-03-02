@@ -37,16 +37,25 @@
             >.rotate-introduction {
                 white-space: nowrap;
                 transform: rotate(-90deg);
-                @include defaultFont($color: #FFFFFF, $font-weight: 400, $fontsize: 64px);
+                @include defaultFont($color: #FFFFFF, $font-weight: 400, $fontsize: 58px);
+                @media(max-width: 750px) {
+                    @include defaultFont($color: #FFFFFF, $font-weight: 400, $fontsize: 32px);
+                }
             }
             >.introduction {
                 margin-bottom: 32px;
                 >.name {
                     white-space: nowrap;
                     @include defaultFont($color:#FFFFFF, $font-weight: 700, $fontsize: 90px);
+                    @media (max-width: 750px) {
+                        @include defaultFont($color:#FFFFFF, $font-weight: 700, $fontsize: 44px);
+                    }
                 }
                 >.position {
                     @include defaultFont($color: #9747FF, $font-weight: 400, $fontsize: 58px);
+                    @media (max-width: 750px) {
+                        @include defaultFont($color: #9747FF, $font-weight: 400, $fontsize: 28px);
+                    }
                 }
             }
         }
@@ -90,7 +99,10 @@
             }
         }
         >.mail {
-            @include defaultFont($font-weight: 400, $fontsize: 23px)
+            @include defaultFont($font-weight: 400, $fontsize: 23px);
+            @media (max-width: 750px) {
+                display: none;
+            }
         }
         >.purple-line {
             width: 100px;
@@ -121,6 +133,9 @@
                 width: 24px;
                 height: 24px;
             }
+        }
+        @media(max-width: 750px) {
+            display: none;
         }
     }
 }

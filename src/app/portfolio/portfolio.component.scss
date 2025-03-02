@@ -9,7 +9,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
         >.headline {
             display: flex;
             flex-direction: row;
@@ -18,6 +17,9 @@
             >h3 {
                 @include defaultFont($font-weight: 700, $fontsize: 90px, $color: #FFFFFF);
                 margin: 0 20px;
+                @media(max-width: 750px) {
+                    @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
+                }
             }
             >.line-right {
                 flex: 1;
@@ -51,12 +53,18 @@
             flex-direction: row;
             align-items: center;
             gap: 35px;
+            @media(max-width: 950px) {
+                flex-direction: column; 
+            }
         }
         >.project:nth-child(even) {
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
             gap: 35px;
+            @media(max-width: 950px) {
+                flex-direction: column; 
+            }
         }
         >.project {
             max-width: 1168px;
@@ -75,6 +83,13 @@
                 }
                 >.project-description {
                     @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+                }
+                @media(max-width: 950px) {
+                    justify-content: center;
+                    >h4, >.project-technologies, >.project-description, >.buttons {
+                        justify-content: center;
+                        text-align: center;
+                    }
                 }
                 >.buttons {
                     display: flex;
