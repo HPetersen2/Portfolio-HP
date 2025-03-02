@@ -21,6 +21,9 @@
         margin-left: 32px;
         text-align: center;
         @include defaultFont($font-weight: 700, $fontsize: 90px, $color: #FFFFFF);
+        @media(max-width: 750px) {
+            @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
+        }
     }
     >.spacer {
         flex-grow: 1;
@@ -32,11 +35,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media (max-width: 750px) {
+        flex-direction: column;
+        >h4 {
+            @include defaultFont($font-weight: 700, $fontsize: 23px, $color: #FFFFFF);   
+        }
+    }
     >.text-container {
         display: flex;
         flex-direction: column;
         gap: 24px;
         margin-left: 100px;
+        @media(max-width: 750px) {
+            margin: 25px; 
+        }
         >h4 {
             @include defaultFont($font-weight: 700, $fontsize: 32px, $color: #FFFFFF);
         }
@@ -82,6 +94,9 @@
                     width: 25px;
                     height: 25px;
                 }
+                @media(max-width: 750px) {
+                    margin-left: 50px;
+                }
             }
             >.send-container {
                 display: flex;
@@ -93,6 +108,9 @@
                     flex-direction: row;
                     align-items: center;
                     gap: 8px;
+                    @media(max-width: 750px) {
+                        margin-left: 25px;
+                    }
                     >a >img{
                         width: 18px;
                         height: 18px;
@@ -135,6 +153,10 @@
     margin: 0;
 }
 .shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
     height: 300px;
     width: 500px;
     background-image: url('./../../assets/img/33.\ Purple\ shadow\ Footer.svg');
