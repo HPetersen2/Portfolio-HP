@@ -19,7 +19,8 @@
     }
     >.picture-container {
         background-image: url('./../../assets/img/29.\ photo\ shadows.svg');
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
         width: 700px;
         display: flex;
         justify-content: center;

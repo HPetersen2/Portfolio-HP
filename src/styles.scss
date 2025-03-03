@@ -52,6 +52,7 @@ span {
     color: #FFFFFF;
     font-weight: 400;
     font-size: $font-size;
+    cursor: pointer;
     &:hover {
         background-color: #9747FF;
         transform: scale(1.15 );
