@@ -132,6 +132,19 @@
     }
 }
 
+.go-up-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+    >a >svg {
+        width: 39px;
+        height: 39px;
+    }
+    a:hover > svg {
+        fill : #70E61C;
+    }
+}
+
 .default-btn {
     @include button($border-radius: 10px, $background-color: #B6B6B6, $color: #FFFFFF, $font-size: 23px);
     &:hover {

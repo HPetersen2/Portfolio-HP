@@ -54,7 +54,8 @@
             align-items: center;
             gap: 35px;
             @media(max-width: 950px) {
-                flex-direction: column; 
+                flex-direction: column;
+                margin: 0 25px 0 25px;
             }
         }
         >.project:nth-child(even) {

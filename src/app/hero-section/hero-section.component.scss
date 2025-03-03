@@ -18,10 +18,14 @@
         flex-direction: column;
     }
     >.picture-container {
+        background-image: url('./../../assets/img/29.\ photo\ shadows.svg');
+        background-size: cover;
+        width: 700px;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
         >img {
-            background-image: url('./../../assets/img/29.\ photo\ shadows.svg');
-            background-size: cover;
-            width: 700px;
+            height: 550px;
             @media (max-width: 750px) {
                 width: 100%;
             }
@@ -111,9 +115,6 @@
         }
     }
     >.scroll-container {
-        position: absolute;
-        bottom: 0;
-        right: 0;
         margin-bottom: 10px;
         >div {
             display: flex;
