@@ -12,7 +12,8 @@
     "my-skills": {
         "headline": "Meine Skills",
         "technologies": "Mit diesen Frontendtechnologien, kenne ich mich bereits sehr gut aus.",
-        "looking-another-skill": "Auf der Suche nach <span style='color: yellow;'>einem anderen Skill</span>?",
+        "looking-another": "Auf der Suche nach ",
+        "skill": "einem anderen Skill",
         "new-technology": "Sehr gerne arbeite ich mich in eine weitere Technologie ein, um weiter zu lernen.",
         "continually-learning": "Kontiunierliches Lernen",
         "contact": "Kontakt aufnehmen"

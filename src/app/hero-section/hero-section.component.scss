@@ -2,7 +2,6 @@
 
 .shadow {
     background-color: #141D2F;
-    height: calc(100vh - 80px);
     background-image: url('./../../assets/img/28.\ Hero\ Background.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,9 +26,6 @@
         margin-top: 100px;
         >img {
             height: 550px;
-            @media (max-width: 750px) {
-                width: 100%;
-            }
         }
     }
     >.introduction-container {

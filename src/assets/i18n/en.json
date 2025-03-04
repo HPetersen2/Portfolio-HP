@@ -12,7 +12,8 @@
     "my-skills": {
         "headline": "My skills",
         "technologies": "I am already very familiar with these front-end technologies.",
-        "looking-another-skill": "Looking for <span style='color: #9747FF; font-size: 32px; font-weight: 700;'>another skill</span>?",
+        "looking-another": "Looking for a",
+        "skill": "different skill",
         "new-technology": "I am very happy to familiarize myself with another technology in order to improve it further.",
         "continually-learning": "Continually learning",
         "contact": "Get in touch"
