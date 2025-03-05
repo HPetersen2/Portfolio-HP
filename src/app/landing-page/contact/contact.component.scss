@@ -1,5 +1,4 @@
-@import './../../styles.scss';
-
+@import './../../../styles.scss';
 
 .main {
     background-color: #141D2F;
@@ -155,7 +154,7 @@
     z-index: -1;
     height: 300px;
     width: 500px;
-    background-image: url('./../../assets/img/33.\ Purple\ shadow\ Footer.svg');
+    background-image: url('./../../../assets/img/33.\ Purple\ shadow\ Footer.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }

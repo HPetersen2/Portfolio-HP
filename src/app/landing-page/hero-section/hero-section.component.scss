@@ -1,8 +1,8 @@
-@import './../../styles.scss';
+@import './../../../styles.scss';
 
 .shadow {
     background-color: #141D2F;
-    background-image: url('./../../assets/img/28.\ Hero\ Background.svg');
+    background-image: url('./../../../assets/img/28.\ Hero\ Background.svg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -17,7 +17,7 @@
         flex-direction: column;
     }
     >.picture-container {
-        background-image: url('./../../assets/img/29.\ photo\ shadows.svg');
+        background-image: url('./../../../assets/img/29.\ photo\ shadows.svg');
         background-size: contain;
         background-repeat: no-repeat;
         width: 700px;
