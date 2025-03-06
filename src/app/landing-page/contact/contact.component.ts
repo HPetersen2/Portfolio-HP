@@ -34,7 +34,7 @@ export class ContactComponent {
     }
   }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://henrik-petersen.de/sendMail.php',
