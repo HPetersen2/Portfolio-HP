@@ -2,10 +2,10 @@
 
 .shadow {
     background-color: #141D2F;
-    background-image: url('./../../../assets/img/28.\ Hero\ Background.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
+    // background-image: url('./../../../assets/img/28.\ Hero\ Background.svg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // width: 100vw;
 }
 
 .main {
@@ -13,9 +13,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    @media (max-width: 750px) {
-        flex-direction: column;
-    }
     >.picture-container {
         background-image: url('./../../../assets/img/29.\ photo\ shadows.svg');
         background-size: contain;
@@ -39,24 +36,15 @@
                 white-space: nowrap;
                 transform: rotate(-90deg);
                 @include defaultFont($color: #FFFFFF, $font-weight: 400, $fontsize: 58px);
-                @media(max-width: 750px) {
-                    @include defaultFont($color: #FFFFFF, $font-weight: 400, $fontsize: 32px);
-                }
             }
             >.introduction {
                 margin-bottom: 32px;
                 >.name {
                     white-space: nowrap;
                     @include defaultFont($color:#FFFFFF, $font-weight: 700, $fontsize: 90px);
-                    @media (max-width: 750px) {
-                        @include defaultFont($color:#FFFFFF, $font-weight: 700, $fontsize: 44px);
-                    }
                 }
                 >.position {
                     @include defaultFont($color: #9747FF, $font-weight: 400, $fontsize: 58px);
-                    @media (max-width: 750px) {
-                        @include defaultFont($color: #9747FF, $font-weight: 400, $fontsize: 28px);
-                    }
                 }
             }
         }
@@ -101,9 +89,6 @@
         }
         >.mail {
             @include defaultFont($font-weight: 400, $fontsize: 23px);
-            @media (max-width: 750px) {
-                display: none;
-            }
         }
         >.purple-line {
             width: 100px;
@@ -132,9 +117,6 @@
                 height: 24px;
             }
         }
-        @media(max-width: 750px) {
-            display: none;
-        }
     }
 }
 
@@ -142,4 +124,57 @@
     0% { transform: translateY(0); }    // Startposition
     50% { transform: translateY(-12px); } // Nach oben
     100% { transform: translateY(0); }  // Wieder zurück nach unten
+}
+
+@media (max-width: 750px) {
+    .main {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 950px) {
+    .main {
+        .picture-container {
+            margin-top: 0;
+        }
+        .introduction-container {
+            .text-container {
+                .rotate-introduction {
+                    @include defaultFont($color: #FFFFFF, $font-weight: 400, $fontsize: 32px);
+                }
+                .introduction {
+                    .name {
+                        @include defaultFont($color:#FFFFFF, $font-weight: 700, $fontsize: 44px);
+                    }
+                    .position {
+                        @include defaultFont($color: #9747FF, $font-weight: 400, $fontsize: 28px);
+                    }
+                }
+            }
+        }
+    }
+    .contact-container {
+        .link-container {
+            .mail {
+                display: none;
+            }
+        }
+        .scroll-container {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1220px) {
+    .main {
+        .introduction-container {
+            .text-container {
+                .introduction {
+                    .name {
+                        white-space: normal;
+                    }
+                }
+            }
+        }
+    }
 }
