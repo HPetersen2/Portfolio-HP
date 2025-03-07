@@ -17,9 +17,6 @@
             >h3 {
                 @include defaultFont($font-weight: 700, $fontsize: 90px, $color: #FFFFFF);
                 margin: 0 20px;
-                @media(max-width: 750px) {
-                    @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
-                }
             }
             >.line-right {
                 flex: 1;
@@ -64,7 +61,7 @@
             align-items: center;
             gap: 35px;
             @media(max-width: 950px) {
-                flex-direction: column; 
+                flex-direction: column;
             }
         }
         >.project {
@@ -84,13 +81,6 @@
                 }
                 >.project-description {
                     @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
-                }
-                @media(max-width: 950px) {
-                    justify-content: center;
-                    >h4, >.project-technologies, >.project-description, >.buttons {
-                        justify-content: center;
-                        text-align: center;
-                    }
                 }
                 >.buttons {
                     display: flex;
@@ -115,6 +105,40 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .content {
+        .projects-container {
+            .project {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 450px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .content {
+        .head {
+            h3 {
+                @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
+            }
+        }
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            .project {
+                h4, .project-technologies, .project-description, .buttons {
+                    justify-content: center;
+                    text-align: center;
                 }
             }
         }

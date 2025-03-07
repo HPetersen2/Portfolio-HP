@@ -9,7 +9,6 @@
         <h4>{{ "contact.intro" | translate }}</h4>
         <p>{{ "contact.request-contact" | translate }}</p>
         <p>{{ "contact.new-contact" | translate }}</p>
-        <div class="shadow"></div>
       </div>
       <div class="contact-field-container">
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
@@ -103,6 +102,7 @@
               <textarea
                 #message="ngModel"
                 minlength="4"
+                maxlength="400"
                 [(ngModel)]="contactData.message"
                 name="message"
                 id="message"

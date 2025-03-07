@@ -82,6 +82,9 @@
                     width: 25px;
                     height: 25px;
                 }
+                >textarea {
+                    min-height: 150px;
+                }
             }
             >.send-container {
                 display: flex;
@@ -147,17 +150,6 @@
     @include defaultFont($font-weight: 400, $fontsize: 14px, $color: #E61C40);
     margin: 0;
 }
-.shadow {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    height: 300px;
-    width: 500px;
-    background-image: url('./../../../assets/img/33.\ Purple\ shadow\ Footer.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 @media (max-width: 750px) {
     .head {
@@ -172,6 +164,13 @@
         }
         .text-container {
             margin: 25px;
+        }
+        .contact-field-container { 
+            >form {
+                >textarea {
+                    min-height: auto;
+                }
+            }
         }
     }
     .field {
