@@ -12,6 +12,9 @@ footer {
         >.henrik {
             display: flex;
             flex-direction: column;
+            >svg {
+                margin-bottom: 10px;
+            }
             >a {
                 @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
             }

@@ -40,7 +40,15 @@
         "send": "Senden :)"
     },
     "footer": {
-        "legalnotice": "Rechtliche Hinweise"
+        "imprint": "Impressum",
+        "data-protection": "Datenschutzhinweise"
+    },
+
+    "imprint": {
+        "headline": "Impressum",
+        "contact": "Kontakt",
+        "phone": "Telefon",
+        "source": "Quelle"
     }
 
 }

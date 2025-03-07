@@ -40,7 +40,16 @@
         "send": "Send message :)"
     },
     "footer": {
-        "legalnotice": "Legal Notice"
+        "imprint": "Imprint",
+        "data-protection": "Privacy Policy"
+    },
+
+    
+    "imprint": {
+        "headline": "Imprint",
+        "contact": "Contact",
+        "phone": "Phone",
+        "source": "Source"
     }
 
 }

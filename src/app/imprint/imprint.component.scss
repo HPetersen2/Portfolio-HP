@@ -16,10 +16,11 @@
         >h2 {
             @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
         }
-        >p {
+        >p, a, table {
             @include defaultFont($font-weight: 400, $fontsize:16px, $color: #FFFFFF);
+            text-align: left;
         }
-        >.contact, .adress {
+        >.adress, .contact {
             >p {
                 @include defaultFont($font-weight: 400, $fontsize:16px, $color: #FFFFFF);
             }

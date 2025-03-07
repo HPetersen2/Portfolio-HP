@@ -1,19 +1,27 @@
 <div class="main">
     <div class="text-container">
-            <h1>Impressum</h1>
+            <h1>{{ "imprint.headline" | translate }}</h1>
 
         <div class="adress">
             <p>Henrik Petersen<br />
                 Uslarer Str. 29<br />
                 37170 Uslar</p>
         </div>
-        <h2>Kontakt</h2>
+        <h2>{{ "imprint.contact" | translate }}</h2>
         <div class="contact">
-            <p>Telefon: +49 176 56035923<br/>
-            E-Mail: kontakt&#64;henrik-petersen.de</p>
+            <table>
+                <tr>
+                    <td>{{ "imprint.phone" | translate }}:</td>
+                    <td><a href="tel:+4917656035923">+49 176 56035923</a></td>
+                </tr>
+                <tr>
+                    <td>E-Mail:</td>
+                    <td><a href="mailto:kontakt@henrik-petersen.de">kontakt&#64;henrik-petersen.de</a></td>
+                </tr>
+            </table>
         </div>
 
 
-        <p>Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>
+        <p>{{ "imprint.source" | translate }}: <a href="https://www.e-recht24.de">eRecht24</a></p>
     </div>
 </div>
