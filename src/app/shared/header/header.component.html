@@ -16,11 +16,10 @@
             <a href="#about-me">{{ 'header.aboutMe' | translate }}</a>
             <a href="#my-skills">Skills</a>
             <a href="#portfolio">Portfolio</a>
-            @if(this.languageService.currentLanguage == "de") {
-                <img (click)="this.languageService.switchLanguage('de')" src="assets/img/english.svg" alt="english_flag">
-            } @else if (this.languageService.currentLanguage == "en") {
-                <img (click)="this.languageService.switchLanguage('en')" src="assets/img/german.svg" alt="german_flag">
-            }
+            <div class="change-languages">
+                <button [ngStyle]="{'background-color': this.languageService.currentLanguage == 'de' ? '#70E61C' : 'transparent'}" (click)="this.languageService.switchLanguage('en')">DE</button>
+                <button [ngStyle]="{'background-color': this.languageService.currentLanguage == 'en' ? '#70E61C' : 'transparent'}" (click)="this.languageService.switchLanguage('de')">EN</button>
+            </div>
         </nav>
         <nav class="nav-mobile">
             <img (click)="switchBurgerMenu()" src="assets/img/burger_menu.svg" alt="menu">
@@ -31,9 +30,9 @@
     <a href="#about-me">{{ 'header.aboutMe' | translate }}</a>
     <a href="#my-skills">Skills</a>
     <a href="#portfolio">Portfolio</a>
-    @if(this.languageService.currentLanguage == "de") {
-        <img (click)="this.languageService.switchLanguage('de')" src="assets/img/english.svg" alt="english_flag">
-    } @else if (this.languageService.currentLanguage == "en") {
-        <img (click)="this.languageService.switchLanguage('en')" src="assets/img/german.svg" alt="german_flag">
-    }
+    <div class="language-burger-menu">
+        <a [ngStyle]="{'color': this.languageService.currentLanguage == 'de' ? '#70E61C' : 'white'}" (click)="this.languageService.switchLanguage('en')">DE</a>
+        <p>/</p>
+        <a [ngStyle]="{'color': this.languageService.currentLanguage == 'en' ? '#70E61C' : 'white'}" (click)="this.languageService.switchLanguage('de')">EN</a>
+    </div>
 </div>

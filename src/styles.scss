@@ -36,7 +36,7 @@ span {
     src: url('./assets/fonts/Poppins-Medium.ttf');
 }
 
-@mixin defaultFont($font-weight: 400, $fontsize:23px, $color: #FFFFFF) {
+@mixin defaultFont($font-weight: 400, $fontsize: 23px, $color: #FFFFFF) {
     font-family: 'Poppins', Arial, sans-serif;
     font-weight: $font-weight;
     font-size: $fontsize;

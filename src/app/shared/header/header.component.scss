@@ -28,9 +28,17 @@ header {
                     color: #70E61C;
                 }
             }
-            >img {
-                width: 36px;
-                height: 36px;
+            >.change-languages {
+                display: flex;
+                flex-direction: row;
+                gap: 14px;
+                >button {
+                    background-color: transparent;
+                    border: 1px solid #70E61C;
+                    border-radius: 10px;
+                    padding: 5px 8px 5px 8px;
+                    @include defaultFont($font-weight: 400, $fontsize: 18px, $color: #FFFFFF);
+                }
             }
         }
         >.nav-mobile {
@@ -43,6 +51,7 @@ header {
 }
 
 .burger-menu {
+    z-index: 10;
     display: none;
     align-items: center;
     justify-content: center;
@@ -54,11 +63,16 @@ header {
         background-color: #414856;
         @include defaultFont($font-weight: 400, $fontsize: 23px, $color: #FFFFFF);
     }
-    >img {
-        background-color: #414856;
-        width: 36px;
-        height: 36px;
+    >.language-burger-menu {
+        display: flex;
+        flex-direction: row;
+        >a, p {
+            border: none;
+            background-color: #414856;
+            @include defaultFont($font-weight: 400, $fontsize: 23px, $color: #FFFFFF);
+        }
     }
+
 }
 
 .open {
