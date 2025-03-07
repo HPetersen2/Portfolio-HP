@@ -166,10 +166,9 @@
             margin: 25px;
         }
         .contact-field-container { 
+            margin-right: 25px;
             >form {
-                >textarea {
-                    min-height: auto;
-                }
+                width: 100%;
             }
         }
     }

@@ -46,6 +46,7 @@ footer {
         .content{
             flex-direction: column;
             justify-content: space-evenly;
+            margin: 0;
             .henrik {
                 .legalnotice {
                     display: none;
@@ -59,7 +60,9 @@ footer {
     
             }
             .legalnotice-mobile {
-                display: block;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 >a {
                     @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
                 }
