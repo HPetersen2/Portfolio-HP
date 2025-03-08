@@ -58,7 +58,9 @@ header {
     flex-direction: column;
     gap: 29px;
     background-color: #414856;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 120px);
+    position: fixed;
+    width: 100%;
     >a {
         background-color: #414856;
         @include defaultFont($font-weight: 400, $fontsize: 23px, $color: #FFFFFF);
@@ -81,7 +83,6 @@ header {
 
 @media (max-width: 750px) {
     header {
-        height: 50px;
         width: 100%;
         padding: 37px 50px 37px 50px;
         .content {
