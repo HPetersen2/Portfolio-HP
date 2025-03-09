@@ -136,7 +136,13 @@
 @media (max-width: 950px) {
     .main {
         .picture-container {
+            width: 80%;
             margin-top: 0;
+            img {
+                height: auto;
+                width: 100%;
+                display: block;
+            }
         }
         .introduction-container {
             .text-container {
