@@ -35,21 +35,12 @@
                 @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
             }
         }
-        @media (max-width: 750px) {
-            margin-left: 24px;
-            >h2 {
-                @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
-            }
-        }
     }
     >.about-me-picture-container {
         display: flex;
         flex-direction: row;
         align-items: center;
         width: 100%;
-        @media (max-width: 750px) {
-            display: none;
-        }
         >.about-me-picture {
             margin-left: 100px;
             >img {
@@ -86,3 +77,29 @@
 //         background-size: cover;
 //     }
 // }
+
+@media (max-width: 950px) {
+    .content {
+        .about-me-picture-container {
+            .about-me-picture > img {
+                width: 300px;
+                height: 300px;
+                margin-right: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .content {
+        .about-me-container {
+            margin: 25px;
+            h2 {
+                @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
+            }
+        }
+        .about-me-picture-container {
+            display: none;
+        }
+    }
+}
