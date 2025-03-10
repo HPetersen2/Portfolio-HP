@@ -5,6 +5,8 @@
 }
 
 header {
+    display: flex;
+    justify-content: center;
     height: 120px;
     position: sticky;
     z-index: 1000;
@@ -12,6 +14,7 @@ header {
     padding: 37px 100px 37px 100px;
     box-sizing: border-box;
     >.content {
+        width: 100%;
         max-width: 1440px;
         display: flex;
         justify-content: space-between;
@@ -81,16 +84,32 @@ header {
     display: flex;
 }
 
+@media (max-width: 815px) {
+    header {
+        .content {
+            .nav-bigscreen > a {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
 @media (max-width: 750px) {
     header {
         width: 100%;
         padding: 37px 50px 37px 50px;
         .content {
+            display: flex;
+            align-items: center;
             .nav-bigscreen {
                 display: none;
             }
             .nav-mobile {
                 display: flex;
+                img {
+                    width: 28px;
+                    height: 28px;
+                }
             }
         }
     }

@@ -5,7 +5,14 @@
     // background-image: url('./../../../assets/img/28.\ Hero\ Background.svg');
     // background-repeat: no-repeat;
     // background-size: cover;
-    // width: 100vw;
+    width: 100vw;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main {
@@ -76,11 +83,18 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 100px;
+    width: 100%;
+    max-width: 1440px;
     >.link-container {
         display: flex;
         align-items: center;
         gap: 32px;
         margin-top: 32px;
+        .purple-line {
+            width: 100px;
+            height: 4px;
+            background-color: #9747FF;
+        }
         >.icon {
             width: 30px;
             &:hover {
@@ -90,11 +104,6 @@
         }
         >.mail {
             @include defaultFont($font-weight: 400, $fontsize: 23px);
-        }
-        >.purple-line {
-            width: 100px;
-            height: 4px;
-            background-color: #9747FF;
         }
     }
     >.scroll-container {

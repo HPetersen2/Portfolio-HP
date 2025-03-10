@@ -34,4 +34,9 @@ export class HeaderComponent {
     }
   }
 
+  deactiveBurgerMenu() {
+    this.isBurgerMenuActive = false;
+    this.renderer.removeClass(document.body, 'no-scroll');
+  }
+
 }

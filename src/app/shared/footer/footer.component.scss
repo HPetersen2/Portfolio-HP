@@ -3,12 +3,16 @@
 footer {
     border-top: 4px solid #70E61C;
     background-color: #141D2F;
+    display: flex;
+    justify-content: center;
     >.content {
         height: 300px;
         margin: 0 100px 0 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        max-width: 1440px;
+        width: 100%;
         >.henrik {
             display: flex;
             flex-direction: column;
