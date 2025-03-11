@@ -4,11 +4,12 @@ import { LanguageService } from '../../language.service';
 import { NgClass } from '@angular/common';
 import { Renderer2 } from '@angular/core';
 import { NgStyle } from '@angular/common';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [TranslateModule, NgClass, NgStyle],
+  imports: [TranslateModule, NgClass, NgStyle, RouterModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

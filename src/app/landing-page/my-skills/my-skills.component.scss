@@ -142,12 +142,18 @@
                 display: block;
             }
         }
+        .skills {
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 
 @media (max-width: 480px) {
     .content {
         .skills {
+            display: flex;
+            justify-content: center;
             gap: 44px;
         }
     }
