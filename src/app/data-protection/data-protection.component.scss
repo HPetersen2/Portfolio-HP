@@ -1,23 +1,21 @@
 @import './../../styles.scss';
 
-.main {
+.content {
     background-color: #141D2F;
     width: 100vw;
     display: flex;
     justify-content: center;
-    >.content {
-        max-width: 1440px;
-        >h1 {
-            @include defaultFont($font-weight: 700, $fontsize: 90px, $color: #FFFFFF);
-        }
-        >h2 {
-            @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
-        }
-        >p, ul {
-            @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
-        }
-        >a {
-            @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
-        }
+
+    >h1 {
+        @include defaultFont($font-weight: 700, $fontsize: 90px, $color: #FFFFFF);
+    }
+    >h2 {
+        @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
+    }
+    >p, ul {
+        @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+    }
+    >a {
+        @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
     }
 }
