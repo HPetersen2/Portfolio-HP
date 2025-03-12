@@ -82,19 +82,15 @@
 .contact-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 100px;
-    width: 100%;
     max-width: 1440px;
+    width: 100%;
     >.link-container {
         display: flex;
         align-items: center;
         gap: 32px;
         margin-top: 32px;
-        .purple-line {
-            width: 100px;
-            height: 4px;
-            background-color: #9747FF;
-        }
         >.icon {
             width: 30px;
             &:hover {
@@ -129,6 +125,23 @@
         }
     }
 }
+
+.foot {
+    display: flex;
+    width: 100%;
+    >.purple-line {
+        flex-grow: 1;
+        min-width: 100px;
+        height: 4px;
+        background-color: #9747FF;
+    }
+    >.contact-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
 
 @keyframes moveUpDown {
     0% { transform: translateY(0); }    // Startposition
