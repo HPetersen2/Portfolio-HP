@@ -111,6 +111,14 @@
                     display: flex;
                     justify-content: center;
                 }
+                >.thanks-container {
+                    display: flex;
+                    justify-content: center;
+                    >.thanks-for-message {
+                        display: none;
+                        @include defaultFont($font-weight: 400, $fontsize: 14px, $color: #70E61C);
+                    }
+                }
             }
         }
 

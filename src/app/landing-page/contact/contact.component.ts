@@ -18,6 +18,7 @@ export class ContactComponent {
 
   accept:boolean = false;
   touchedAccept:boolean = false;
+  send:boolean = false;
 
   contactData = {
     name: "",
@@ -54,6 +55,7 @@ export class ContactComponent {
           next: (response) => {
             this.accept = false;
             this.touchedAccept = false;
+            this.send = true;
             ngForm.resetForm();
           },
           error: (error) => {

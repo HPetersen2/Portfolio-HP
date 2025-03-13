@@ -159,6 +159,9 @@
                 {{ "contact.send" | translate }}
               </button>
             </div>
+            <div class="thanks-container">
+              <span [ngStyle]="{'display': send ? 'block' : 'none'}" class="thanks-for-message">{{ 'contact.thanks-for-message' | translate }}</span>
+            </div>
           </div>
         </form>
         <div class="go-up-button">

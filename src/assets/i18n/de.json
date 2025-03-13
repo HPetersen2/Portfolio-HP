@@ -37,7 +37,8 @@
         "email-error": "Deine E-Mail ist erforderlich",
         "message-error": "Deine Nachricht ist erforderlich",
         "privacy-policy-error": "Bitte akzeptiere die Datenschutzbestimmungen.",
-        "send": "Senden :)"
+        "send": "Senden :)",
+        "thanks-for-message": "Vielen Dank für deine Nachricht!"
     },
     "footer": {
         "imprint": "Impressum",
