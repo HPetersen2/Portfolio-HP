@@ -32,7 +32,7 @@
         "name-field": "Dein Name",
         "email-field": "Deine E-Mail",
         "message-field": "Deine Nachricht",
-        "privacy-policy": "Ich habe die <a href='#'>Datenschutzbestimmungen</a> gelesen und stimme der Verarbeitung meiner Daten zu.",
+        "privacy-policy": "Ich habe die <a href='/data-protection'>Datenschutzbestimmungen</a> gelesen und stimme der Verarbeitung meiner Daten zu.",
         "name-error": "Dein Name ist erforderlich",
         "email-error": "Deine E-Mail ist erforderlich",
         "message-error": "Deine Nachricht ist erforderlich",

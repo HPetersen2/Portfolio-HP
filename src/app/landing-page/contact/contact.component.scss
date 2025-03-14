@@ -28,101 +28,108 @@
 }
 
 .content {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    >.text-container {
+    justify-content: center;
+    >.max-content {
+        max-width: 1440px;
         display: flex;
-        flex-direction: column;
-        gap: 24px;
-        margin-left: 100px;
-        margin-right: 32px;
-        >h4 {
-            @include defaultFont($font-weight: 700, $fontsize: 32px, $color: #FFFFFF);
-        }
-        >p {
-            @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
-        }
-    }
-    >.contact-field-container {
-        display: flex;
-        flex-direction: column;
-        margin-right: 100px;
-        >form {
+        flex-direction: row;
+        justify-content: space-between;
+        >.text-container {
             display: flex;
             flex-direction: column;
-            gap: 32px;
-            margin-bottom: 10px;
-            .field {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                background-color: #141D2F;
-                border: 1px solid #9747FF;
-                border-radius: 10px;
-                padding: 15px 25px 15px 25px;
-                margin-bottom: 10px;
-                &:hover {
-                    border: 1px solid #70E61C;
-                }
-                >input, textarea {
-                    resize: none;
-                    background-color: #141D2F;
-                    width: 100%;
-                    border: none;
-                    @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
-                    &::placeholder {
-                        @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
-                    }
-                    &:focus-visible, :active {
-                        outline: none;
-                    }
-                }
-                >img {
-                    width: 25px;
-                    height: 25px;
-                }
-                >textarea {
-                    min-height: 150px;
-                }
+            gap: 24px;
+            margin-left: 100px;
+            margin-right: 32px;
+            >h4 {
+                @include defaultFont($font-weight: 700, $fontsize: 32px, $color: #FFFFFF);
             }
-            >.send-container {
+            >p {
+                @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+            }
+        }
+        >.contact-field-container {
+            display: flex;
+            flex-direction: column;
+            margin-right: 100px;
+            >form {
                 display: flex;
                 flex-direction: column;
-                gap: 16px;
-                margin-bottom: 32px;
-                >.accept {
+                gap: 32px;
+                margin-bottom: 10px;
+                .field {
                     display: flex;
-                    flex-direction: row;
+                    justify-content: space-between;
                     align-items: center;
-                    gap: 8px;
-                    >a >img{
-                        width: 18px;
-                        height: 18px;
+                    background-color: #141D2F;
+                    border: 1px solid #9747FF;
+                    border-radius: 10px;
+                    padding: 15px 25px 15px 25px;
+                    margin-bottom: 10px;
+                    &:hover {
+                        border: 1px solid #70E61C;
                     }
-                    >p {
-                        @include defaultFont($font-weight: 400, $fontsize: 14px, $color: #FFFFFF);
-                        >a {
-                            @include defaultFont($font-weight: 400, $fontsize: 14px, $color: #9747FF);
+                    >input, textarea {
+                        resize: none;
+                        background-color: #141D2F;
+                        width: 100%;
+                        border: none;
+                        @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+                        &::placeholder {
+                            @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+                        }
+                        &:focus-visible, :active {
+                            outline: none;
+                        }
+                    }
+                    >img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                    >textarea {
+                        min-height: 150px;
+                    }
+                }
+                >.send-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    margin-bottom: 32px;
+                    >.accept {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 8px;
+                        >a >img{
+                            width: 18px;
+                            height: 18px;
+                        }
+                        >p {
+                            @include defaultFont($font-weight: 400, $fontsize: 14px, $color: #FFFFFF);
+                            >a {
+                                @include defaultFont($font-weight: 400, $fontsize: 14px, $color: #9747FF);
+                            }
+                        }
+                    }
+                    >.button {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    >.thanks-container {
+                        display: flex;
+                        justify-content: center;
+                        >.thanks-for-message {
+                            display: none;
+                            @include defaultFont($font-weight: 400, $fontsize: 14px, $color: #70E61C);
                         }
                     }
                 }
-                >.button {
-                    display: flex;
-                    justify-content: center;
-                }
-                >.thanks-container {
-                    display: flex;
-                    justify-content: center;
-                    >.thanks-for-message {
-                        display: none;
-                        @include defaultFont($font-weight: 400, $fontsize: 14px, $color: #70E61C);
-                    }
-                }
             }
+    
         }
-
     }
+
 }
 
 .go-up-button {

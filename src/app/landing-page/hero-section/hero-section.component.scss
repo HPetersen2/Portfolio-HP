@@ -79,66 +79,69 @@
     }
 }
 
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 100px;
-    max-width: 1440px;
-    width: 100%;
-    >.link-container {
-        display: flex;
-        align-items: center;
-        gap: 32px;
-        margin-top: 32px;
-        >.icon {
-            width: 30px;
-            &:hover {
-                transition: all ease 0.2s;
-                transform: scale(1.3);
-            }
-        }
-        >.mail {
-            @include defaultFont($font-weight: 400, $fontsize: 23px);
-        }
-    }
-    >.scroll-container {
-        margin-bottom: 10px;
-        >div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 60px;
-            margin-left: 100px;
-            cursor: pointer;
-            &:hover {
-                animation: moveUpDown 0.8s ease-in-out infinite alternate;
-            }
-            >p {
-                transform: rotate(90deg);
-                @include defaultFont($color: #FFFFFF, $font-weight: 400, $fontsize: 23px);
-            }
-            >img {
-                width: 24px;
-                height: 24px;
-            }
-        }
-    }
-}
 
 .foot {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
+    padding-bottom: 100px;
     >.purple-line {
-        flex-grow: 1;
+        display: flex;
+        align-items: flex-end;
+        flex: 1;
         min-width: 100px;
         height: 4px;
         background-color: #9747FF;
+        margin: 27px 25px 0 0;
     }
-    >.contact-wrapper {
-        display: flex;
-        justify-content: center;
+    >.contact-container {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1440px;
+        >.link-container {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            margin-top: 32px;
+            >.icon {
+                width: 30px;
+                &:hover {
+                    transition: all ease 0.2s;
+                    transform: scale(1.3);
+                }
+            }
+            >.mail {
+                @include defaultFont($font-weight: 400, $fontsize: 23px);
+            }
+        }
+        >.scroll-container {
+            margin-bottom: 10px;
+            >div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 60px;
+                margin-left: 100px;
+                cursor: pointer;
+                &:hover {
+                    animation: moveUpDown 0.8s ease-in-out infinite alternate;
+                }
+                >p {
+                    transform: rotate(90deg);
+                    @include defaultFont($color: #FFFFFF, $font-weight: 400, $fontsize: 23px);
+                }
+                >img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+    >.spacer {
+        flex: 1;
     }
 }
 
