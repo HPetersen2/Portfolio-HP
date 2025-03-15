@@ -138,7 +138,7 @@
                   ><img src="assets/img/check_box_outline_blank.svg" alt="checkbox"
                 /></a>
                 }
-                <p [innerHTML]="'contact.privacy-policy' | translate"></p>
+                <p>{{'contact.privacy-policy' | translate }} <a routerLink="/data-protection">{{ 'contact.privacy-policy-link' | translate }}</a> {{'contact.privacy-policy-two' | translate }}</p>
               </div>
               <div>
                 @if (touchedAccept && !accept) {

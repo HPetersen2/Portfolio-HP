@@ -1,21 +1,32 @@
 @import './../../styles.scss';
 
-.content {
+
+.data-protection {
     background-color: #141D2F;
     width: 100vw;
     display: flex;
     justify-content: center;
-
-    >h1 {
-        @include defaultFont($font-weight: 700, $fontsize: 90px, $color: #FFFFFF);
-    }
-    >h2 {
-        @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
-    }
-    >p, ul {
-        @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
-    }
-    >a {
-        @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+    .content {
+        margin: 100px;
+        max-width: 1440px;
+        >.headline {
+            text-align: center;
+        }
+        >h1 {
+            @include defaultFont($font-weight: 700, $fontsize: 90px, $color: #FFFFFF);
+        }
+        >h2 {
+            @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
+        }
+        >h3, h4 {
+            @include defaultFont($font-weight: 700, $fontsize: 23px, $color: #FFFFFF);
+        }
+        >p, ul {
+            @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+        }
+        >a {
+            @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
+        }
     }
 }
+
