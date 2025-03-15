@@ -167,30 +167,34 @@
 }
 
 @media (max-width: 750px) {
-    .head {
-        h3 {
-            @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
-        }
-    }
-    .content {
-        flex-direction: column;
-        h4 {
-            @include defaultFont($font-weight: 700, $fontsize: 23px, $color: #FFFFFF);   
-        }
-        .text-container {
-            margin: 25px;
-        }
-        .contact-field-container { 
-            margin-right: 25px;
-            >form {
-                width: 100%;
+    .main {
+        .head {
+            h3 {
+                @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
             }
         }
-    }
-    .field {
-        margin-left: 50px;
-    }
-    .accept {
-        margin: 25px;
+        .content {
+            .max-content {
+                flex-direction: column;
+                h4 {
+                    @include defaultFont($font-weight: 700, $fontsize: 23px, $color: #FFFFFF);   
+                }
+                .text-container {
+                    margin: 25px;
+                }
+                .contact-field-container { 
+                    margin-right: 25px;
+                    >form {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .field {
+            margin-left: 50px;
+        }
+        .accept {
+            margin: 25px;
+        }
     }
 }
