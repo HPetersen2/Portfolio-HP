@@ -30,3 +30,28 @@
     }
 }
 
+@media (max-width: 550px) {
+    .data-protection > .content{
+        margin: 25px;
+        h1 {
+            @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
+        }
+        h2 {
+            @include defaultFont($font-weight: 700, $fontsize: 23px, $color: #FFFFFF);
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .data-protection > .content{
+        >h3, h4 {
+            @include defaultFont($font-weight: 700, $fontsize: 16px, $color: #FFFFFF);
+        }
+        >p, ul {
+            @include defaultFont($font-weight: 400, $fontsize: 14px, $color: #FFFFFF);
+        }
+        >a {
+            @include defaultFont($font-weight: 400, $fontsize: 14px, $color: #FFFFFF);
+        }
+    }
+}

@@ -1,6 +1,6 @@
 @import './../../../styles.scss';
 
-.main {
+.contact {
     background-color: #141D2F;
     padding-top: 140px;
 }
@@ -167,7 +167,7 @@
 }
 
 @media (max-width: 750px) {
-    .main {
+    .contact {
         .head {
             h3 {
                 @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);

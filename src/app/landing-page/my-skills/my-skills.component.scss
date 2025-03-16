@@ -1,6 +1,6 @@
 @import './../../../styles.scss';
 
-.content {
+.my-skills {
     background-color: #141D2F;
     display: flex;
     flex-direction: row;
@@ -103,13 +103,13 @@
 }
   
 @media (max-width: 1280px) {
-    .content {
+    .my-skills {
         gap: 10px;
     }
 }
 
 @media (max-width: 1200px) {
-    .content {
+    .my-skills {
         .my-skills-text {
             h3 {
                 font-size: 45px;
@@ -124,7 +124,7 @@
 }
 
 @media (max-width: 800px) {
-    .content {
+    .my-skills {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -150,7 +150,7 @@
 }
 
 @media (max-width: 480px) {
-    .content {
+    .my-skills {
         .skills {
             display: flex;
             justify-content: center;
@@ -160,7 +160,7 @@
 }
 
 @media (max-width: 400px) {
-    .content {
+    .my-skills {
         .skills {
             gap: 20px;
         }

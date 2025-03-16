@@ -1,6 +1,6 @@
 @import './../../../styles.scss';
 
-.shadow {
+.hero {
     background-color: #141D2F;
     background-image: url('./../../../assets/img/28.\ Hero\ Background.svg');
     background-repeat: no-repeat;
@@ -27,7 +27,6 @@
         background-repeat: no-repeat;
         display: flex;
         justify-content: center;
-        margin-top: 100px;
         >img {
             max-width: 500px;
             height: auto;
