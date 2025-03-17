@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-root',
@@ -13,4 +15,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 export class AppComponent {
 
   title = 'portfolio_HP';
+
+  ngOnInit() {
+    AOS.init();
+  }
+
 }
