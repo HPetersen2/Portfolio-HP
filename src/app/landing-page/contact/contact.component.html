@@ -6,12 +6,12 @@
     </div>
     <div class="content">
       <div class="max-content">
-        <div class="text-container">
+        <div class="text-container" data-aos="fade-left">
           <h4>{{ "contact.intro" | translate }}</h4>
           <p>{{ "contact.request-contact" | translate }}</p>
           <p>{{ "contact.new-contact" | translate }}</p>
         </div>
-        <div class="contact-field-container">
+        <div class="contact-field-container" data-aos="fade-right">
           <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div>
               <div

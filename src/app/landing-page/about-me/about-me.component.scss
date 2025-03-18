@@ -42,6 +42,15 @@
                 @include defaultFont($font-weight: 400, $fontsize: 16px, $color: #FFFFFF);
             }
         }
+        >.background {
+            position: relative;
+            >.shadow {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: -1;
+            }
+        }
     }
     >.about-me-picture-container {
         display: flex;
