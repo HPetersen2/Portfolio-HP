@@ -53,6 +53,12 @@
         "contact": "Contact",
         "phone": "Phone",
         "source": "Source"
-    }
+    },
 
+    "data-protection": {
+        "headline": "Privacy policy",
+        "p1": "We are very delighted that you have shown interest in our company. Data protection is of a particularly high priority. The use of the Internet pages of the Henrik Petersen is possible without any indication of personal data; however, if a data subject wants to use special enterprise services via our website, processing of personal data could become necessary. However, if a person concerned wishes to make use of special services of our company via our website, it may be necessary to process personal data. If the processing of personal data is necessary and there is no legal basis for such processing, we generally obtain the consent of the data subject.",
+        "p2": "Die Verarbeitung personenbezogener Daten, beispielsweise des Namens, der Anschrift, E-Mail-Adresse oder Telefonnummer einer betroffenen Person, erfolgt stets im Einklang mit der Datenschutz-Grundverordnung und in Übereinstimmung mit den für die Henrik Petersen geltenden landesspezifischen Datenschutzbestimmungen. Mittels dieser Datenschutzerklärung möchte unser Unternehmen die Öffentlichkeit über Art, Umfang und Zweck der von uns erhobenen, genutzten und verarbeiteten personenbezogenen Daten informieren. Ferner werden betroffene Personen mittels dieser Datenschutzerklärung über die ihnen zustehenden Rechte aufgeklärt.",
+        "p3": "Die Henrik Petersen hat als für die Verarbeitung Verantwortlicher zahlreiche technische und organisatorische Maßnahmen umgesetzt, um einen möglichst lückenlosen Schutz der über diese Internetseite verarbeiteten personenbezogenen Daten sicherzustellen. Dennoch können Internetbasierte Datenübertragungen grundsätzlich Sicherheitslücken aufweisen, sodass ein absoluter Schutz nicht gewährleistet werden kann. Aus diesem Grund steht es jeder betroffenen Person frei, personenbezogene Daten auch auf alternativen Wegen, beispielsweise telefonisch, an uns zu übermitteln."
+    }
 }
