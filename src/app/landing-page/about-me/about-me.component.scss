@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    box-sizing: border-box;
 }
 
 .spacer {
@@ -17,7 +17,10 @@
     flex-direction: row;
     justify-content:  space-between;
     max-width: 1440px;
+    position: relative;
     >.about-me-container {
+        position: relative;
+        z-index: 1;
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -47,6 +50,8 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        position: relative;
+        z-index: 1;
         >.about-me-picture {
             margin-left: 100px;
             >img {
@@ -56,6 +61,17 @@
                 object-fit: contain;
                 border: 4px solid #70E61C;
             }
+        }
+    }
+    >.background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 570px;
+        width: 600px;
+        >img {
+            width: 100%;
+            height: 100%;
         }
     }
 }

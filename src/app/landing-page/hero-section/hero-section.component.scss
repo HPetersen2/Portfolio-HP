@@ -2,10 +2,6 @@
 
 .hero {
     background-color: #141D2F;
-    // background-image: url('./../../../assets/img/28.\ Hero\ Background.svg');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    background-position: top center;
     width: 100vw;
 }
 
@@ -14,6 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .main {
@@ -21,7 +19,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: relative;
     >.picture-container {
         background-image: url('./../../../assets/img/29.\ photo\ shadows.svg');
         background-size: contain;
@@ -75,7 +72,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: unset;
+    z-index: -1;
 }
 
 @keyframes scrollAnimation {
