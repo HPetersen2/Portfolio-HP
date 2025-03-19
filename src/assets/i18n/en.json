@@ -100,7 +100,14 @@
         "h18": "a) Right to confirmation",
         "p24": "Each data subject shall have the right granted by the European legislator to obtain from the controller the confirmation as to whether or not personal data concerning him or her are being processed. If a data subject wishes to avail himself of this right of confirmation, he or she may, at any time, contact any employee of the controller.",
         "h19": "b) Right to information",
-        "p25": "Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, jederzeit von dem für die Verarbeitung Verantwortlichen unentgeltliche Auskunft über die zu seiner Person gespeicherten personenbezogenen Daten und eine Kopie dieser Auskunft zu erhalten. Ferner hat der Europäische Richtlinien- und Verordnungsgeber der betroffenen Person Auskunft über folgende Informationen zugestanden:",
-        
+        "p25": "Each data subject shall have the right granted by the European legislator to obtain from the controller free information about his or her personal data stored at any time and a copy of this information. Furthermore, the European legislator has granted the data subject access to the following information:",
+        "p26": "the purposes of processing",
+        "p27": "the categories of personal data that are processed",
+        "p28": "the recipients or categories of recipients to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organizations",
+        "p29": "where possible, the envisaged period for which the personal data will be stored, or, if not possible, the criteria used to determine that period",
+        "p30": "the existence of the right to request from the controller rectification or erasure of personal data or restriction of processing of personal data concerning the data subject or to object to such processing",
+        "p31": "the existence of a right to lodge a complaint with a supervisory authority",
+        "p32": "if the personal data is not collected from the data subject: All available information about the origin of the data",
+        "p33": "the existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) GDPR and, at least in those cases, meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing for the data subject"
     }
 }
