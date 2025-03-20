@@ -11,11 +11,11 @@
     },
     "my-skills": {
         "headline": "Meine Skills",
-        "technologies": "Mit diesen Frontendtechnologien, kenne ich mich bereits sehr gut aus.",
+        "technologies": "Mit diesen Frontendtechnologien kenne ich mich bereits sehr gut aus.",
         "looking-another": "Auf der Suche nach ",
         "skill": "einem anderen Skill",
-        "new-technology": "Sehr gerne arbeite ich mich in eine weitere Technologie ein, um weiter zu lernen.",
-        "continually-learning": "Kontiunierliches Lernen",
+        "new-technology": "Sehr gerne arbeite ich mich in eine weitere Technologie ein, um weiterzulernen.",
+        "continually-learning": "Kontinuierliches Lernen",
         "contact": "Kontakt aufnehmen"
     },
     "portfolio": {
