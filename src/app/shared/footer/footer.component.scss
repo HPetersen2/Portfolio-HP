@@ -5,6 +5,8 @@ footer {
     background-color: #141D2F;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 3;
     >.content {
         height: 300px;
         margin: 0 100px 0 100px;
