@@ -123,28 +123,35 @@
   
 @media (max-width: 1280px) {
     .my-skills {
-        gap: 10px;
-        .skills {
-            gap: 44px;
+        .content {
+            .skills {
+                gap: 44px;
+            }
         }
     }
 }
 
 @media (max-width: 1200px) {
     .my-skills {
-        .my-skills-text {
-            margin-right: 100px;
-            h3 {
-                font-size: 45px;
-            }
-            .text {
-                p {
-                    font-size: 16px;
+        .content {
+            .my-skills-text {
+                margin-right: 100px;
+                h3 {
+                    font-size: 45px;
                 }
-                div > a > button {
-                    padding: 10px;
+                .text {
+                    p {
+                        font-size: 16px;
+                    }
+                    div > a > button {
+                        padding: 10px;
+                    }
                 }
             }
+        }
+        .background {
+            top: 0 !important;
+            left: -350px !important;
         }
     }
 }
@@ -186,6 +193,9 @@
                 justify-content: center;
                 gap: 44px;
             }
+        }
+        .background {
+            top: 400px !important;
         }
     }
 }

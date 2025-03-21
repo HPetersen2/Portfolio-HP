@@ -96,12 +96,6 @@
     .content > .about-me-picture-container > .about-me-picture {
         margin-left: 25px;
     }
-    .background {
-        top: -200px !important;
-        right: -250px !important;
-        height: 415px !important;
-        width: 391px !important;
-    }
 }
 
 @media (max-width: 950px) {
@@ -112,6 +106,12 @@
                 height: 300px;
                 margin-right: 25px;
             }
+        }
+        .background {
+            top: -150px !important;
+            right: -0 !important;
+            height: 300px !important;
+            width: 200px !important;
         }
     }
 }
@@ -127,11 +127,5 @@
         .about-me-picture-container {
             display: none;
         }
-    }
-    .background {
-        top: -150px !important;
-        right: -0 !important;
-        height: 300px !important;
-        width: 200px !important;
     }
 }

@@ -187,6 +187,7 @@
 
 @media (max-width: 750px) {
     .contact {
+        overflow-x: hidden;
         .head {
             h3 {
                 @include defaultFont($font-weight: 700, $fontsize: 45px, $color: #FFFFFF);
@@ -207,6 +208,12 @@
                         width: 100%;
                     }
                 }
+            }
+            .background {
+                width: 300px !important;
+                height: 400px !important;
+                bottom: -150px !important;
+                left: -180px !important;
             }
         }
         .field {

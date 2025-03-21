@@ -7,6 +7,7 @@ footer {
     justify-content: center;
     position: relative;
     z-index: 3;
+    overflow-x: hidden;
     >.content {
         height: 300px;
         margin: 0 100px 0 100px;
