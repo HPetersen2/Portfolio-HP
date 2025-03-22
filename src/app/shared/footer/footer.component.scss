@@ -21,6 +21,9 @@ footer {
             flex-direction: column;
             >svg {
                 margin-bottom: 10px;
+                &:focus {
+                    outline: none;
+                }
             }
             >.legalnotice {
                 display: flex;

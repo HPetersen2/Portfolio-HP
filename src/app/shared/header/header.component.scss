@@ -21,6 +21,9 @@ header {
         justify-content: space-between;
         >div >svg {
             width: 150px;
+            &:focus {
+                outline: none;
+            }
         }
         >.nav-bigscreen {
             display: flex;

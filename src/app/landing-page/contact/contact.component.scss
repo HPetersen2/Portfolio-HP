@@ -206,8 +206,11 @@
                 }
                 .contact-field-container { 
                     margin-right: 25px;
-                    >form {
+                    form {
                         width: 100%;
+                        .field {
+                            margin-left: 25px;
+                        }
                     }
                 }
             }
