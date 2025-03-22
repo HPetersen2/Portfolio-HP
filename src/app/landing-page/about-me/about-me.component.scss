@@ -5,8 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
     padding-top: 120px;
+    overflow: hidden;
 }
 
 .spacer {
@@ -67,7 +67,7 @@
     }
     >.background {
         position: absolute;
-        top: -125px;
+        top: -100px;
         right: -550px;
         height: 570px;
         width: 600px;
@@ -96,6 +96,12 @@
     .content > .about-me-picture-container > .about-me-picture {
         margin-left: 25px;
     }
+    .content > .background {
+        top: -150px;
+        right: -250px;
+        width: 350px;
+        height: 415px;
+    }
 }
 
 @media (max-width: 950px) {
@@ -106,12 +112,6 @@
                 height: 300px;
                 margin-right: 25px;
             }
-        }
-        .background {
-            top: -150px !important;
-            right: -0 !important;
-            height: 300px !important;
-            width: 200px !important;
         }
     }
 }
@@ -126,6 +126,10 @@
         }
         .about-me-picture-container {
             display: none;
+        }
+        .background {
+            top: -150px;
+            right: -270px;
         }
     }
 }
