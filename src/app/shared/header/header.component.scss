@@ -8,11 +8,12 @@ header {
     display: flex;
     justify-content: center;
     height: 120px;
-    position: sticky;
+    position: fixed;
     z-index: 1000;
     top: 0;
     padding: 37px 100px 37px 100px;
     box-sizing: border-box;
+    width: 100%;
     >.content {
         width: 100%;
         max-width: 1440px;
@@ -40,6 +41,7 @@ header {
                     border: 1px solid #70E61C;
                     border-radius: 10px;
                     padding: 5px 8px 5px 8px;
+                    cursor: pointer;
                     @include defaultFont($font-weight: 400, $fontsize: 18px, $color: #FFFFFF);
                 }
             }
@@ -61,7 +63,7 @@ header {
     flex-direction: column;
     gap: 29px;
     background-color: #414856;
-    height: calc(100vh - 120px);
+    height: 100vh;
     position: fixed;
     width: 100%;
     >a {
@@ -72,6 +74,7 @@ header {
         display: flex;
         flex-direction: row;
         >a, p {
+            cursor: pointer;
             border: none;
             background-color: #414856;
             @include defaultFont($font-weight: 400, $fontsize: 23px, $color: #FFFFFF);
