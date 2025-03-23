@@ -258,4 +258,29 @@
     .hero {
         width: unset;
     }
+    .content {
+        .main {
+            .picture-container {
+                width: 60%;
+            }
+            .introduction-container {
+                .rotate-introduction {
+                    .i-am {
+                        font-size: 23px;
+                    }
+                }
+                .introduction {
+                    .name {
+                        font-size: 30px;
+                    }
+                    .position {
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+        .foot {
+            padding: 0;
+        }
+    }
 }

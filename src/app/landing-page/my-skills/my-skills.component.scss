@@ -43,6 +43,7 @@
                 }
             }
             >.continually-learning {
+                position: relative;
                 >svg path {
                     fill: #9747FF;
                 }
@@ -50,14 +51,57 @@
                     color: #9747FF;
                 }
                 &:hover {
+                    >.continually-learning-hover {
+                        display: block;
+                    }
                     >svg path {
                         fill: #FFFFFF;
                     }
                     >p {
                         color: #FFFFFF;
                     }
+                    >svg {
+                        animation: none;
+                    }
+                }
+                >.continually-learning-hover {
+                    display: none;
+                    position: absolute;
+                    bottom: 100px;
+                    left: -5px;
+                    >.speechbubble {
+                        position: relative;
+                        >p {
+                            position: absolute;
+                            z-index: 5;
+                            top: 10px;
+                            left: 10px;
+                            @include defaultFont($font-weight: 400, $fontsize: 14px, $color: black)
+                        }
+                        >.icons {
+                            position: absolute;
+                            bottom: 40px;
+                            z-index: 5;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            >img {
+                                width: 30px;
+                                margin: 0 25px 0 25px;
+                            }
+                            >.django {
+                                width: 70px;
+                            }
+                        }
+                        >svg {
+                            z-index: 1;
+                            width: 190px;
+                        }
+                    }
                 }
             }
+
         }
         .my-skills-text {
             display: flex;

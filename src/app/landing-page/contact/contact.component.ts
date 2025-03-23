@@ -20,6 +20,7 @@ export class ContactComponent {
   accept:boolean = false;
   touchedAccept:boolean = false;
   send:boolean = false;
+  showOverlay:boolean = false; 
 
   contactData = {
     name: "",
@@ -58,6 +59,7 @@ export class ContactComponent {
             this.touchedAccept = false;
             this.send = true;
             ngForm.resetForm();
+            this.activedOverlay();
           },
           error: (error) => {
             console.error(error);
@@ -68,6 +70,13 @@ export class ContactComponent {
         this.touchedAccept = false;
         ngForm.resetForm();
     }
+  }
+
+  activedOverlay() {
+    this.showOverlay = true;
+    setTimeout(() => {
+      this.showOverlay = false;
+    }, 1500);
   }
 
 }
