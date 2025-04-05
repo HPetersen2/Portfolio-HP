@@ -1,7 +1,7 @@
 <header>
     <div class="content">
         <div>
-            <svg width="123" height="31" viewBox="0 0 123 31" fill="none" xmlns="http://www.w3.org/2000/svg" routerLink="/">
+            <svg aria-label="Logo von Henrik" width="123" height="31" viewBox="0 0 123 31" fill="none" xmlns="http://www.w3.org/2000/svg" routerLink="/">
                 <path d="M113.445 30L107.865 21.72V30H100.809V3.36H107.865V17.724L113.445 9.804H121.905L113.949 19.956L122.049 30H113.445Z" fill="white"/>
                 <rect x="100" y="3" width="8" height="27" fill="#70E61C"/>
                 <path d="M93.2988 7.932C92.0508 7.932 91.0427 7.596 90.2747 6.924C89.5307 6.228 89.1588 5.364 89.1588 4.332C89.1588 3.276 89.5307 2.4 90.2747 1.704C91.0427 1.008 92.0508 0.659998 93.2988 0.659998C94.5228 0.659998 95.5067 1.008 96.2507 1.704C97.0187 2.4 97.4027 3.276 97.4027 4.332C97.4027 5.364 97.0187 6.228 96.2507 6.924C95.5067 7.596 94.5228 7.932 93.2988 7.932ZM96.7907 9.804V30H89.7347V9.804H96.7907Z" fill="white"/>
@@ -13,12 +13,12 @@
             </svg>                                
         </div>
         <nav class="nav-bigscreen">
-            <a href="#about-me">{{ 'header.aboutMe' | translate }}</a>
-            <a href="#my-skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#about-me" aria-label="Zu über mich scrollen">{{ 'header.aboutMe' | translate }}</a>
+            <a href="#my-skills" aria-label="Zu meinen Skills scrollen">Skills</a>
+            <a href="#portfolio" aria-label="Zu meinem Portfolio scrollen">Portfolio</a>
             <div class="change-languages">
-                <button [ngStyle]="{'background-color': this.languageService.currentLanguage == 'de' ? '#70E61C' : 'transparent'}" (click)="this.languageService.switchLanguage('en')">DE</button>
-                <button [ngStyle]="{'background-color': this.languageService.currentLanguage == 'en' ? '#70E61C' : 'transparent'}" (click)="this.languageService.switchLanguage('de')">EN</button>
+                <button aria-label="Sprache auf Deutsch wechseln" [ngStyle]="{'background-color': this.languageService.currentLanguage == 'de' ? '#70E61C' : 'transparent'}" (click)="this.languageService.switchLanguage('en')">DE</button>
+                <button aria-label="Sprache auf Englisch wechseln" [ngStyle]="{'background-color': this.languageService.currentLanguage == 'en' ? '#70E61C' : 'transparent'}" (click)="this.languageService.switchLanguage('de')">EN</button>
             </div>
         </nav>
         <nav class="nav-mobile">
@@ -27,12 +27,12 @@
     </div>
 </header>
 <div class="burger-menu" [ngClass]="{'open': isBurgerMenuActive}">
-    <a (click)="deactiveBurgerMenu()" href="#about-me">{{ 'header.aboutMe' | translate }}</a>
-    <a (click)="deactiveBurgerMenu()" href="#my-skills">Skills</a>
-    <a (click)="deactiveBurgerMenu()" href="#portfolio">Portfolio</a>
+    <a (click)="deactiveBurgerMenu()" href="#about-me" aria-label="Zu über mich scrollen">{{ 'header.aboutMe' | translate }}</a>
+    <a (click)="deactiveBurgerMenu()" href="#my-skills" aria-label="Zu meinen Skills scrollen">Skills</a>
+    <a (click)="deactiveBurgerMenu()" href="#portfolio" aria-label="Zu meinem Portfolio scrollen">Portfolio</a>
     <div class="language-burger-menu">
-        <a [ngStyle]="{'color': this.languageService.currentLanguage == 'de' ? '#70E61C' : 'white'}" (click)="this.languageService.switchLanguage('en')" (click)="deactiveBurgerMenu()">DE</a>
+        <a aria-label="Sprache auf Deutsch wechseln" [ngStyle]="{'color': this.languageService.currentLanguage == 'de' ? '#70E61C' : 'white'}" (click)="this.languageService.switchLanguage('en')" (click)="deactiveBurgerMenu()">DE</a>
         <p>/</p>
-        <a [ngStyle]="{'color': this.languageService.currentLanguage == 'en' ? '#70E61C' : 'white'}" (click)="this.languageService.switchLanguage('de')" (click)="deactiveBurgerMenu()">EN</a>
+        <a aria-label="Sprache auf Englisch wechseln" [ngStyle]="{'color': this.languageService.currentLanguage == 'en' ? '#70E61C' : 'white'}" (click)="this.languageService.switchLanguage('de')" (click)="deactiveBurgerMenu()">EN</a>
     </div>
 </div>
