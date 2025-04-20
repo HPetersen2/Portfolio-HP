@@ -251,6 +251,16 @@
 @media (max-width: 750px) {
     .main {
         flex-direction: column;
+        .introduction-container {
+            .rotate-introduction {
+                position: relative;
+                .i-am {
+                    position: absolute;
+                    top: -45px;
+                    left: -20px;
+                }
+            }
+        }
     }
     .background {
         bottom: -400px;
@@ -265,8 +275,12 @@
             }
             .introduction-container {
                 .rotate-introduction {
+                    position: relative;
                     .i-am {
                         font-size: 23px;
+                        position: absolute;
+                        left: -12px;
+                        top: -35px;
                     }
                 }
                 .introduction {
@@ -281,6 +295,38 @@
         }
         .foot {
             padding: 0;
+        }
+    }
+}
+
+@media(max-width: 415px) {
+    .foot {
+        .purple-line {
+            min-width: 90px;
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .foot {
+        .purple-line {
+            min-width: 80px;
+        }
+    }
+}
+
+@media(max-width: 380px) {
+    .foot {
+        .purple-line {
+            min-width: 70px;
+        }
+    }
+}
+
+@media(max-width: 350px) {
+    .foot {
+        .purple-line {
+            min-width: 55px;
         }
     }
 }
