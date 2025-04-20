@@ -1,17 +1,17 @@
 <section class="contact" aria-label="Kontakt Sektion">
-  <div class="head">
+  <header class="head">
     <div class="line-left"></div>
     <h3 aria-label="Überschrift">{{ "contact.headline" | translate }}</h3>
     <div class="spacer"></div>
-  </div>
-  <div class="content">
-    <div class="max-content">
-      <div class="text-container" data-aos="fade-left">
+  </header>
+  <section class="content">
+    <section class="max-content">
+      <article class="text-container" data-aos="fade-left">
         <h4>{{ "contact.intro" | translate }}</h4>
         <p>{{ "contact.request-contact" | translate }}</p>
         <p>{{ "contact.new-contact" | translate }}</p>
-      </div>
-      <div class="contact-field-container" data-aos="fade-right">
+      </article>
+      <article class="contact-field-container" data-aos="fade-right">
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
           <div>
             <div [ngStyle]="{
@@ -130,10 +130,10 @@
             </svg>
           </a>
         </div>
-      </div>
+      </article>
         <div class="background">
           <img src="assets/img/33. Purple shadow Footer.svg" alt="background">
         </div>
-    </div>
-  </div>
+    </section>
+  </section>
 </section>

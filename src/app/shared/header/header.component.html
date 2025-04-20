@@ -1,5 +1,5 @@
 <header>
-    <div class="content">
+    <section class="content">
         <div>
             <svg aria-label="Logo von Henrik" width="123" height="31" viewBox="0 0 123 31" fill="none" xmlns="http://www.w3.org/2000/svg" routerLink="/">
                 <path d="M113.445 30L107.865 21.72V30H100.809V3.36H107.865V17.724L113.445 9.804H121.905L113.949 19.956L122.049 30H113.445Z" fill="white"/>
@@ -24,7 +24,7 @@
         <nav class="nav-mobile">
             <img (click)="switchBurgerMenu()" src="assets/img/burger_menu.svg" alt="menu">
         </nav>
-    </div>
+    </section>
 </header>
 <div class="burger-menu" [ngClass]="{'open': isBurgerMenuActive}">
     <a (click)="deactiveBurgerMenu()" href="#about-me" aria-label="Zu über mich scrollen">{{ 'header.aboutMe' | translate }}</a>
