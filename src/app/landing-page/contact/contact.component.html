@@ -23,7 +23,8 @@
                 }" class="field">
               <label for="name"></label>
               <input aria-label="Namenfeld" #name="ngModel" [(ngModel)]="contactData.name" name="name" id="name"
-                [placeholder]="'contact.name-field' | translate" type="text" required />
+                [placeholder]="'contact.name-field' | translate" type="text" required 
+                pattern="^[A-Za-zÄÖÜäöüß\-'\s]{2,50}$"/>
               @if(name.touched) {
               <img [src]="
                     !name.valid
