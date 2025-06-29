@@ -2,6 +2,11 @@
     "header": {
         "aboutMe" : "About me"
     },
+    "hero": {
+        "iam": "I am",
+        "contact-btn": "Let's talk",
+        "scroll-down": "Scroll down"
+    },
     "about-me": {
         "headline": "About me",
         "intro": "IT has fascinated me since I was a child. Both in my apprenticeship and during my studies, I started automating processes early on and further deepened my great interest in IT.",
