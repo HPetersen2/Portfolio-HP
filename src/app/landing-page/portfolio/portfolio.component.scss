@@ -47,6 +47,7 @@
         display: flex;
         justify-content: center;
         >.projects-container {
+            gap: 48px;
             max-width: 1440px;
             position: relative;
             z-index: 3;
@@ -70,11 +71,13 @@
                 gap: 35px;
                 @media(max-width: 950px) {
                     flex-direction: column;
+                    margin: 0 25px 0 25px;
                 }
             }
             >.project {
                 max-width: 1168px;
-                >img {
+                margin: 50px 0;
+                >img, svg {
                     width: 620px;
                 }
                 >.project-info {

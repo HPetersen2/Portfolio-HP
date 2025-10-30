@@ -21,11 +21,12 @@
         "skill": "einem anderen Skill",
         "new-technology": "Sehr gerne arbeite ich mich in eine weitere Technologie ein, um weiterzulernen.",
         "continually-learning": "Kontinuierliches Lernen",
-        "continually-learning-hover": "Ich habe ein besonderes Interesse am Lernen",
+        "continually-learning-hover": "Ich habe ein besonderes Interesse \nDevSecOps zu erlernen.",
         "contact": "Kontakt aufnehmen"
     },
     "portfolio": {
         "intro": "Entdecken Sie hier meine Projekte, um sich ein Bild von meinen Fähigkeiten zu verschaffen.",
+        "kanmind": "Backend für ein Projektmanagement-Tool, in dem Aufgaben erstellt, verwaltet und Teammitgliedern zugewiesen werden können, um Projekte effizient zu organisieren und den Arbeitsfluss zu optimieren.",
         "coderr": "Backend für eine Freelancer-Entwickler-Plattform. Verbindet sich mit einem bestehenden Frontend und implementiert zentrale Funktionen wie Nutzerregistrierung, Projektlisten und Bewertungen.",
         "join": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
         "pollo-loco": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
